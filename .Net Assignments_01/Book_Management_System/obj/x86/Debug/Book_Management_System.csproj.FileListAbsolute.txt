@@ -1,0 +1,11 @@
+E:\Git C#\.Net Assignments_01\Book_Management_System\Book_Management_System\bin\Debug\Book_Management_System.exe
+E:\Git C#\.Net Assignments_01\Book_Management_System\Book_Management_System\bin\Debug\Book_Management_System.pdb
+E:\Git C#\.Net Assignments_01\Book_Management_System\Book_Management_System\obj\x86\Debug\Book_Management_System.frm_Login.resources
+E:\Git C#\.Net Assignments_01\Book_Management_System\Book_Management_System\obj\x86\Debug\Book_Management_System.Properties.Resources.resources
+E:\Git C#\.Net Assignments_01\Book_Management_System\Book_Management_System\obj\x86\Debug\Book_Management_System.csproj.GenerateResource.Cache
+E:\Git C#\.Net Assignments_01\Book_Management_System\Book_Management_System\obj\x86\Debug\Book_Management_System.exe
+E:\Git C#\.Net Assignments_01\Book_Management_System\Book_Management_System\obj\x86\Debug\Book_Management_System.pdb
+E:\Git C#\.Net Assignments_01\Book_Management_System\Book_Management_System\obj\x86\Debug\Book_Management_System.frm_Add_New_Books.resources
+E:\Git C#\.Net Assignments_01\Book_Management_System\Book_Management_System\bin\Debug\Book_Management_System.exe.config
+E:\Git C#\.Net Assignments_01\Book_Management_System\Book_Management_System\obj\x86\Debug\Book_Management_System.frm_View_All_Books.resources
+E:\Git C#\.Net Assignments_01\Book_Management_System\Book_Management_System\obj\x86\Debug\Book_Management_System.csprojResolveAssemblyReference.cache
