@@ -1,0 +1,4 @@
+E:\C#\Console\Factorial_No\Factorial_No\bin\Debug\Factorial_No.exe
+E:\C#\Console\Factorial_No\Factorial_No\bin\Debug\Factorial_No.pdb
+E:\C#\Console\Factorial_No\Factorial_No\obj\x86\Debug\Factorial_No.exe
+E:\C#\Console\Factorial_No\Factorial_No\obj\x86\Debug\Factorial_No.pdb
