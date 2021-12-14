@@ -1,0 +1,4 @@
+E:\C#\Console\Armstrong_No_From_1_To_1000\Armstrong_No_From_1_To_1000\bin\Debug\Armstrong_No_From_1_To_1000.exe
+E:\C#\Console\Armstrong_No_From_1_To_1000\Armstrong_No_From_1_To_1000\bin\Debug\Armstrong_No_From_1_To_1000.pdb
+E:\C#\Console\Armstrong_No_From_1_To_1000\Armstrong_No_From_1_To_1000\obj\x86\Debug\Armstrong_No_From_1_To_1000.exe
+E:\C#\Console\Armstrong_No_From_1_To_1000\Armstrong_No_From_1_To_1000\obj\x86\Debug\Armstrong_No_From_1_To_1000.pdb
