@@ -1,0 +1,9 @@
+E:\C#\.Net Assignments_05\Staff_Management_System\Staff_Management_System\bin\Debug\Staff_Management_System.exe
+E:\C#\.Net Assignments_05\Staff_Management_System\Staff_Management_System\bin\Debug\Staff_Management_System.pdb
+E:\C#\.Net Assignments_05\Staff_Management_System\Staff_Management_System\obj\x86\Debug\Staff_Management_System.frm_Login.resources
+E:\C#\.Net Assignments_05\Staff_Management_System\Staff_Management_System\obj\x86\Debug\Staff_Management_System.Properties.Resources.resources
+E:\C#\.Net Assignments_05\Staff_Management_System\Staff_Management_System\obj\x86\Debug\Staff_Management_System.csproj.GenerateResource.Cache
+E:\C#\.Net Assignments_05\Staff_Management_System\Staff_Management_System\obj\x86\Debug\Staff_Management_System.exe
+E:\C#\.Net Assignments_05\Staff_Management_System\Staff_Management_System\obj\x86\Debug\Staff_Management_System.pdb
+E:\C#\.Net Assignments_05\Staff_Management_System\Staff_Management_System\obj\x86\Debug\Staff_Management_System.MDI_Staff_Management_System.resources
+E:\C#\.Net Assignments_05\Staff_Management_System\Staff_Management_System\obj\x86\Debug\Staff_Management_System.frm_Add_New_Staff.resources
