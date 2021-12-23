@@ -37,6 +37,7 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.btn_Close = new System.Windows.Forms.Button();
             this.pnl_Login.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,7 +45,7 @@
             // 
             this.btn_Login.BackColor = System.Drawing.Color.Coral;
             this.btn_Login.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Login.Location = new System.Drawing.Point(366, 560);
+            this.btn_Login.Location = new System.Drawing.Point(205, 558);
             this.btn_Login.Name = "btn_Login";
             this.btn_Login.Size = new System.Drawing.Size(128, 56);
             this.btn_Login.TabIndex = 4;
@@ -103,6 +104,7 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Uighur", 18F, System.Drawing.FontStyle.Bold);
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(533, 207);
@@ -129,12 +131,25 @@
             this.textBox2.Size = new System.Drawing.Size(320, 40);
             this.textBox2.TabIndex = 3;
             // 
+            // btn_Close
+            // 
+            this.btn_Close.BackColor = System.Drawing.Color.Coral;
+            this.btn_Close.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Close.Location = new System.Drawing.Point(588, 558);
+            this.btn_Close.Name = "btn_Close";
+            this.btn_Close.Size = new System.Drawing.Size(128, 56);
+            this.btn_Close.TabIndex = 5;
+            this.btn_Close.Text = "Close";
+            this.btn_Close.UseVisualStyleBackColor = false;
+            this.btn_Close.Click += new System.EventHandler(this.btn_Close_Click);
+            // 
             // frm_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LavenderBlush;
             this.ClientSize = new System.Drawing.Size(976, 671);
+            this.Controls.Add(this.btn_Close);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.comboBox1);
@@ -143,9 +158,12 @@
             this.Controls.Add(this.lbl_User_Role);
             this.Controls.Add(this.pnl_Login);
             this.Controls.Add(this.btn_Login);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frm_Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Login Form";
             this.pnl_Login.ResumeLayout(false);
             this.pnl_Login.PerformLayout();
             this.ResumeLayout(false);
@@ -164,6 +182,7 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button btn_Close;
     }
 }
 

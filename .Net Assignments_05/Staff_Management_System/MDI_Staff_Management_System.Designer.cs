@@ -38,6 +38,8 @@
             this.updateDepartmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.userManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lbl_Logged_User = new System.Windows.Forms.Label();
+            this.btn_Log_Out = new System.Windows.Forms.Button();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -122,23 +124,51 @@
             this.addUserToolStripMenuItem.Size = new System.Drawing.Size(159, 28);
             this.addUserToolStripMenuItem.Text = "Add User";
             // 
+            // lbl_Logged_User
+            // 
+            this.lbl_Logged_User.AutoSize = true;
+            this.lbl_Logged_User.Font = new System.Drawing.Font("Microsoft Uighur", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Logged_User.Location = new System.Drawing.Point(1089, -3);
+            this.lbl_Logged_User.Name = "lbl_Logged_User";
+            this.lbl_Logged_User.Size = new System.Drawing.Size(145, 41);
+            this.lbl_Logged_User.TabIndex = 15;
+            this.lbl_Logged_User.Text = "Logged User";
+            // 
+            // btn_Log_Out
+            // 
+            this.btn_Log_Out.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Log_Out.BackColor = System.Drawing.Color.Coral;
+            this.btn_Log_Out.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Log_Out.Location = new System.Drawing.Point(1376, -1);
+            this.btn_Log_Out.Name = "btn_Log_Out";
+            this.btn_Log_Out.Size = new System.Drawing.Size(128, 39);
+            this.btn_Log_Out.TabIndex = 16;
+            this.btn_Log_Out.Text = "Log Out";
+            this.btn_Log_Out.UseVisualStyleBackColor = false;
+            this.btn_Log_Out.Click += new System.EventHandler(this.btn_Log_Out_Click);
+            // 
             // MDI_Staff_Management_System
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LavenderBlush;
             this.ClientSize = new System.Drawing.Size(1504, 833);
+            this.Controls.Add(this.btn_Log_Out);
+            this.Controls.Add(this.lbl_Logged_User);
             this.Controls.Add(this.menuStrip);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip;
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "MDI_Staff_Management_System";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MDI_Staff_Management_System";
+            this.Text = "Staff Management System";
             this.Load += new System.EventHandler(this.MDI_Staff_Management_System_Load);
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
         #endregion
@@ -154,6 +184,8 @@
         private System.Windows.Forms.ToolStripMenuItem addDepartmentToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem updateDepartmentToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addUserToolStripMenuItem;
+        private System.Windows.Forms.Label lbl_Logged_User;
+        private System.Windows.Forms.Button btn_Log_Out;
     }
 }
 

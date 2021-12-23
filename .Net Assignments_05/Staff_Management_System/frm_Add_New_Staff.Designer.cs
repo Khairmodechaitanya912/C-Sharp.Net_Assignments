@@ -38,34 +38,34 @@
             this.lbl_Add_New_Staff = new System.Windows.Forms.Label();
             this.btn_Save = new System.Windows.Forms.Button();
             this.gb_Staff_Details = new System.Windows.Forms.GroupBox();
-            this.lbl_Shift_Timing = new System.Windows.Forms.Label();
-            this.lbl_Gender = new System.Windows.Forms.Label();
-            this.lbl_Department = new System.Windows.Forms.Label();
+            this.tb_Hobbies = new System.Windows.Forms.TextBox();
+            this.clb_Hobbies = new System.Windows.Forms.CheckedListBox();
+            this.gb_Project = new System.Windows.Forms.GroupBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.gb_Shift_Timing = new System.Windows.Forms.GroupBox();
+            this.rbtn_Night = new System.Windows.Forms.RadioButton();
+            this.rbtn_Afternoon = new System.Windows.Forms.RadioButton();
+            this.rbtn_Morning = new System.Windows.Forms.RadioButton();
+            this.gb_Gender = new System.Windows.Forms.GroupBox();
+            this.rbtn_Female = new System.Windows.Forms.RadioButton();
+            this.rbtn_Male = new System.Windows.Forms.RadioButton();
+            this.cmb_Designation = new System.Windows.Forms.ComboBox();
+            this.tb_Staff_Id = new System.Windows.Forms.TextBox();
+            this.dtp_Date_Of_Birth = new System.Windows.Forms.DateTimePicker();
+            this.lbl_Hobbies = new System.Windows.Forms.Label();
             this.lbl_Designation = new System.Windows.Forms.Label();
             this.lbl_Mob_No = new System.Windows.Forms.Label();
             this.lbl_Project = new System.Windows.Forms.Label();
-            this.lbl_Hobbies = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.tb_Staff_Id = new System.Windows.Forms.TextBox();
-            this.cmb_Designation = new System.Windows.Forms.ComboBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.rbtn_Male = new System.Windows.Forms.RadioButton();
-            this.rbtn_Female = new System.Windows.Forms.RadioButton();
-            this.rbtn_Morning = new System.Windows.Forms.RadioButton();
-            this.rbtn_Afternoon = new System.Windows.Forms.RadioButton();
-            this.rbtn_Night = new System.Windows.Forms.RadioButton();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.lbl_Shift_Timing = new System.Windows.Forms.Label();
+            this.lbl_Gender = new System.Windows.Forms.Label();
+            this.lbl_Department = new System.Windows.Forms.Label();
             this.pnl_Add_New_Staff.SuspendLayout();
             this.gb_Staff_Details.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.gb_Project.SuspendLayout();
+            this.gb_Shift_Timing.SuspendLayout();
+            this.gb_Gender.SuspendLayout();
             this.SuspendLayout();
             // 
             // tb_Mob_No
@@ -75,7 +75,7 @@
             this.tb_Mob_No.MaxLength = 10;
             this.tb_Mob_No.Name = "tb_Mob_No";
             this.tb_Mob_No.Size = new System.Drawing.Size(320, 40);
-            this.tb_Mob_No.TabIndex = 11;
+            this.tb_Mob_No.TabIndex = 4;
             // 
             // tb_Staff_Name
             // 
@@ -84,16 +84,17 @@
             this.tb_Staff_Name.MaxLength = 30;
             this.tb_Staff_Name.Name = "tb_Staff_Name";
             this.tb_Staff_Name.Size = new System.Drawing.Size(320, 40);
-            this.tb_Staff_Name.TabIndex = 10;
+            this.tb_Staff_Name.TabIndex = 2;
             // 
             // cmb_Department
             // 
+            this.cmb_Department.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_Department.Font = new System.Drawing.Font("Microsoft Uighur", 18F, System.Drawing.FontStyle.Bold);
             this.cmb_Department.FormattingEnabled = true;
             this.cmb_Department.Location = new System.Drawing.Point(1045, 246);
             this.cmb_Department.Name = "cmb_Department";
             this.cmb_Department.Size = new System.Drawing.Size(320, 45);
-            this.cmb_Department.TabIndex = 9;
+            this.cmb_Department.TabIndex = 8;
             // 
             // lbl_Date_Of_Birth
             // 
@@ -148,7 +149,7 @@
             // 
             this.btn_Save.BackColor = System.Drawing.Color.Coral;
             this.btn_Save.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Save.Location = new System.Drawing.Point(715, 718);
+            this.btn_Save.Location = new System.Drawing.Point(670, 727);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(128, 56);
             this.btn_Save.TabIndex = 12;
@@ -157,14 +158,14 @@
             // 
             // gb_Staff_Details
             // 
-            this.gb_Staff_Details.Controls.Add(this.textBox1);
-            this.gb_Staff_Details.Controls.Add(this.checkedListBox1);
-            this.gb_Staff_Details.Controls.Add(this.groupBox3);
-            this.gb_Staff_Details.Controls.Add(this.groupBox2);
-            this.gb_Staff_Details.Controls.Add(this.groupBox1);
+            this.gb_Staff_Details.Controls.Add(this.tb_Hobbies);
+            this.gb_Staff_Details.Controls.Add(this.clb_Hobbies);
+            this.gb_Staff_Details.Controls.Add(this.gb_Project);
+            this.gb_Staff_Details.Controls.Add(this.gb_Shift_Timing);
+            this.gb_Staff_Details.Controls.Add(this.gb_Gender);
             this.gb_Staff_Details.Controls.Add(this.cmb_Designation);
             this.gb_Staff_Details.Controls.Add(this.tb_Staff_Id);
-            this.gb_Staff_Details.Controls.Add(this.dateTimePicker1);
+            this.gb_Staff_Details.Controls.Add(this.dtp_Date_Of_Birth);
             this.gb_Staff_Details.Controls.Add(this.lbl_Hobbies);
             this.gb_Staff_Details.Controls.Add(this.lbl_Designation);
             this.gb_Staff_Details.Controls.Add(this.lbl_Mob_No);
@@ -186,35 +187,185 @@
             this.gb_Staff_Details.TabStop = false;
             this.gb_Staff_Details.Text = "Staff Details";
             // 
-            // lbl_Shift_Timing
+            // tb_Hobbies
             // 
-            this.lbl_Shift_Timing.AutoSize = true;
-            this.lbl_Shift_Timing.Font = new System.Drawing.Font("Microsoft Uighur", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Shift_Timing.Location = new System.Drawing.Point(824, 133);
-            this.lbl_Shift_Timing.Name = "lbl_Shift_Timing";
-            this.lbl_Shift_Timing.Size = new System.Drawing.Size(192, 52);
-            this.lbl_Shift_Timing.TabIndex = 18;
-            this.lbl_Shift_Timing.Text = "Shift Timing";
+            this.tb_Hobbies.Enabled = false;
+            this.tb_Hobbies.Font = new System.Drawing.Font("Microsoft Uighur", 18F, System.Drawing.FontStyle.Bold);
+            this.tb_Hobbies.Location = new System.Drawing.Point(1246, 449);
+            this.tb_Hobbies.MaxLength = 30;
+            this.tb_Hobbies.Multiline = true;
+            this.tb_Hobbies.Name = "tb_Hobbies";
+            this.tb_Hobbies.Size = new System.Drawing.Size(228, 83);
+            this.tb_Hobbies.TabIndex = 11;
             // 
-            // lbl_Gender
+            // clb_Hobbies
             // 
-            this.lbl_Gender.AutoSize = true;
-            this.lbl_Gender.Font = new System.Drawing.Font("Microsoft Uighur", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Gender.Location = new System.Drawing.Point(824, 34);
-            this.lbl_Gender.Name = "lbl_Gender";
-            this.lbl_Gender.Size = new System.Drawing.Size(122, 52);
-            this.lbl_Gender.TabIndex = 17;
-            this.lbl_Gender.Text = "Gender";
+            this.clb_Hobbies.FormattingEnabled = true;
+            this.clb_Hobbies.Items.AddRange(new object[] {
+            "Playing",
+            "Reading",
+            "Writing",
+            "Eating",
+            "Other"});
+            this.clb_Hobbies.Location = new System.Drawing.Point(1045, 418);
+            this.clb_Hobbies.Name = "clb_Hobbies";
+            this.clb_Hobbies.Size = new System.Drawing.Size(170, 136);
+            this.clb_Hobbies.TabIndex = 10;
             // 
-            // lbl_Department
+            // gb_Project
             // 
-            this.lbl_Department.AutoSize = true;
-            this.lbl_Department.Font = new System.Drawing.Font("Microsoft Uighur", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Department.Location = new System.Drawing.Point(824, 239);
-            this.lbl_Department.Name = "lbl_Department";
-            this.lbl_Department.Size = new System.Drawing.Size(183, 52);
-            this.lbl_Department.TabIndex = 19;
-            this.lbl_Department.Text = "Department";
+            this.gb_Project.Controls.Add(this.checkBox3);
+            this.gb_Project.Controls.Add(this.checkBox2);
+            this.gb_Project.Controls.Add(this.checkBox1);
+            this.gb_Project.Location = new System.Drawing.Point(1045, 335);
+            this.gb_Project.Name = "gb_Project";
+            this.gb_Project.Size = new System.Drawing.Size(376, 53);
+            this.gb_Project.TabIndex = 9;
+            this.gb_Project.TabStop = false;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(253, 20);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(77, 22);
+            this.checkBox3.TabIndex = 2;
+            this.checkBox3.Text = "G pay";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(133, 20);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(65, 22);
+            this.checkBox2.TabIndex = 1;
+            this.checkBox2.Text = "Tata";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(17, 20);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(79, 22);
+            this.checkBox1.TabIndex = 0;
+            this.checkBox1.Text = "Dmart";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // gb_Shift_Timing
+            // 
+            this.gb_Shift_Timing.Controls.Add(this.rbtn_Night);
+            this.gb_Shift_Timing.Controls.Add(this.rbtn_Afternoon);
+            this.gb_Shift_Timing.Controls.Add(this.rbtn_Morning);
+            this.gb_Shift_Timing.Location = new System.Drawing.Point(1045, 133);
+            this.gb_Shift_Timing.Name = "gb_Shift_Timing";
+            this.gb_Shift_Timing.Size = new System.Drawing.Size(376, 53);
+            this.gb_Shift_Timing.TabIndex = 7;
+            this.gb_Shift_Timing.TabStop = false;
+            // 
+            // rbtn_Night
+            // 
+            this.rbtn_Night.AutoSize = true;
+            this.rbtn_Night.Location = new System.Drawing.Point(276, 19);
+            this.rbtn_Night.Name = "rbtn_Night";
+            this.rbtn_Night.Size = new System.Drawing.Size(74, 22);
+            this.rbtn_Night.TabIndex = 4;
+            this.rbtn_Night.TabStop = true;
+            this.rbtn_Night.Text = "Night";
+            this.rbtn_Night.UseVisualStyleBackColor = true;
+            // 
+            // rbtn_Afternoon
+            // 
+            this.rbtn_Afternoon.AutoSize = true;
+            this.rbtn_Afternoon.Location = new System.Drawing.Point(143, 19);
+            this.rbtn_Afternoon.Name = "rbtn_Afternoon";
+            this.rbtn_Afternoon.Size = new System.Drawing.Size(111, 22);
+            this.rbtn_Afternoon.TabIndex = 3;
+            this.rbtn_Afternoon.TabStop = true;
+            this.rbtn_Afternoon.Text = "Afternoon";
+            this.rbtn_Afternoon.UseVisualStyleBackColor = true;
+            // 
+            // rbtn_Morning
+            // 
+            this.rbtn_Morning.AutoSize = true;
+            this.rbtn_Morning.Location = new System.Drawing.Point(17, 19);
+            this.rbtn_Morning.Name = "rbtn_Morning";
+            this.rbtn_Morning.Size = new System.Drawing.Size(98, 22);
+            this.rbtn_Morning.TabIndex = 2;
+            this.rbtn_Morning.TabStop = true;
+            this.rbtn_Morning.Text = "Morning";
+            this.rbtn_Morning.UseVisualStyleBackColor = true;
+            // 
+            // gb_Gender
+            // 
+            this.gb_Gender.Controls.Add(this.rbtn_Female);
+            this.gb_Gender.Controls.Add(this.rbtn_Male);
+            this.gb_Gender.Location = new System.Drawing.Point(1045, 26);
+            this.gb_Gender.Name = "gb_Gender";
+            this.gb_Gender.Size = new System.Drawing.Size(286, 53);
+            this.gb_Gender.TabIndex = 6;
+            this.gb_Gender.TabStop = false;
+            // 
+            // rbtn_Female
+            // 
+            this.rbtn_Female.AutoSize = true;
+            this.rbtn_Female.Location = new System.Drawing.Point(168, 19);
+            this.rbtn_Female.Name = "rbtn_Female";
+            this.rbtn_Female.Size = new System.Drawing.Size(86, 22);
+            this.rbtn_Female.TabIndex = 1;
+            this.rbtn_Female.TabStop = true;
+            this.rbtn_Female.Text = "Female";
+            this.rbtn_Female.UseVisualStyleBackColor = true;
+            // 
+            // rbtn_Male
+            // 
+            this.rbtn_Male.AutoSize = true;
+            this.rbtn_Male.Location = new System.Drawing.Point(30, 19);
+            this.rbtn_Male.Name = "rbtn_Male";
+            this.rbtn_Male.Size = new System.Drawing.Size(69, 22);
+            this.rbtn_Male.TabIndex = 0;
+            this.rbtn_Male.TabStop = true;
+            this.rbtn_Male.Text = "Male";
+            this.rbtn_Male.UseVisualStyleBackColor = true;
+            // 
+            // cmb_Designation
+            // 
+            this.cmb_Designation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_Designation.Font = new System.Drawing.Font("Microsoft Uighur", 18F, System.Drawing.FontStyle.Bold);
+            this.cmb_Designation.FormattingEnabled = true;
+            this.cmb_Designation.Location = new System.Drawing.Point(317, 449);
+            this.cmb_Designation.Name = "cmb_Designation";
+            this.cmb_Designation.Size = new System.Drawing.Size(320, 45);
+            this.cmb_Designation.TabIndex = 5;
+            // 
+            // tb_Staff_Id
+            // 
+            this.tb_Staff_Id.Enabled = false;
+            this.tb_Staff_Id.Font = new System.Drawing.Font("Microsoft Uighur", 18F, System.Drawing.FontStyle.Bold);
+            this.tb_Staff_Id.Location = new System.Drawing.Point(317, 34);
+            this.tb_Staff_Id.MaxLength = 5;
+            this.tb_Staff_Id.Name = "tb_Staff_Id";
+            this.tb_Staff_Id.Size = new System.Drawing.Size(320, 40);
+            this.tb_Staff_Id.TabIndex = 1;
+            // 
+            // dtp_Date_Of_Birth
+            // 
+            this.dtp_Date_Of_Birth.Font = new System.Drawing.Font("Mongolian Baiti", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtp_Date_Of_Birth.Location = new System.Drawing.Point(317, 246);
+            this.dtp_Date_Of_Birth.Name = "dtp_Date_Of_Birth";
+            this.dtp_Date_Of_Birth.Size = new System.Drawing.Size(320, 42);
+            this.dtp_Date_Of_Birth.TabIndex = 3;
+            // 
+            // lbl_Hobbies
+            // 
+            this.lbl_Hobbies.AutoSize = true;
+            this.lbl_Hobbies.Font = new System.Drawing.Font("Microsoft Uighur", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Hobbies.Location = new System.Drawing.Point(826, 449);
+            this.lbl_Hobbies.Name = "lbl_Hobbies";
+            this.lbl_Hobbies.Size = new System.Drawing.Size(132, 52);
+            this.lbl_Hobbies.TabIndex = 23;
+            this.lbl_Hobbies.Text = "Hobbies";
             // 
             // lbl_Designation
             // 
@@ -246,184 +397,35 @@
             this.lbl_Project.TabIndex = 22;
             this.lbl_Project.Text = "Project";
             // 
-            // lbl_Hobbies
+            // lbl_Shift_Timing
             // 
-            this.lbl_Hobbies.AutoSize = true;
-            this.lbl_Hobbies.Font = new System.Drawing.Font("Microsoft Uighur", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Hobbies.Location = new System.Drawing.Point(826, 449);
-            this.lbl_Hobbies.Name = "lbl_Hobbies";
-            this.lbl_Hobbies.Size = new System.Drawing.Size(132, 52);
-            this.lbl_Hobbies.TabIndex = 23;
-            this.lbl_Hobbies.Text = "Hobbies";
+            this.lbl_Shift_Timing.AutoSize = true;
+            this.lbl_Shift_Timing.Font = new System.Drawing.Font("Microsoft Uighur", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Shift_Timing.Location = new System.Drawing.Point(824, 133);
+            this.lbl_Shift_Timing.Name = "lbl_Shift_Timing";
+            this.lbl_Shift_Timing.Size = new System.Drawing.Size(192, 52);
+            this.lbl_Shift_Timing.TabIndex = 18;
+            this.lbl_Shift_Timing.Text = "Shift Timing";
             // 
-            // dateTimePicker1
+            // lbl_Gender
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Mongolian Baiti", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(317, 246);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(320, 42);
-            this.dateTimePicker1.TabIndex = 24;
+            this.lbl_Gender.AutoSize = true;
+            this.lbl_Gender.Font = new System.Drawing.Font("Microsoft Uighur", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Gender.Location = new System.Drawing.Point(824, 34);
+            this.lbl_Gender.Name = "lbl_Gender";
+            this.lbl_Gender.Size = new System.Drawing.Size(122, 52);
+            this.lbl_Gender.TabIndex = 17;
+            this.lbl_Gender.Text = "Gender";
             // 
-            // tb_Staff_Id
+            // lbl_Department
             // 
-            this.tb_Staff_Id.Enabled = false;
-            this.tb_Staff_Id.Font = new System.Drawing.Font("Microsoft Uighur", 18F, System.Drawing.FontStyle.Bold);
-            this.tb_Staff_Id.Location = new System.Drawing.Point(317, 34);
-            this.tb_Staff_Id.MaxLength = 5;
-            this.tb_Staff_Id.Name = "tb_Staff_Id";
-            this.tb_Staff_Id.Size = new System.Drawing.Size(320, 40);
-            this.tb_Staff_Id.TabIndex = 25;
-            // 
-            // cmb_Designation
-            // 
-            this.cmb_Designation.Font = new System.Drawing.Font("Microsoft Uighur", 18F, System.Drawing.FontStyle.Bold);
-            this.cmb_Designation.FormattingEnabled = true;
-            this.cmb_Designation.Location = new System.Drawing.Point(317, 449);
-            this.cmb_Designation.Name = "cmb_Designation";
-            this.cmb_Designation.Size = new System.Drawing.Size(320, 45);
-            this.cmb_Designation.TabIndex = 26;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.rbtn_Female);
-            this.groupBox1.Controls.Add(this.rbtn_Male);
-            this.groupBox1.Location = new System.Drawing.Point(1045, 26);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(286, 53);
-            this.groupBox1.TabIndex = 27;
-            this.groupBox1.TabStop = false;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.rbtn_Night);
-            this.groupBox2.Controls.Add(this.rbtn_Afternoon);
-            this.groupBox2.Controls.Add(this.rbtn_Morning);
-            this.groupBox2.Location = new System.Drawing.Point(1045, 133);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(376, 53);
-            this.groupBox2.TabIndex = 28;
-            this.groupBox2.TabStop = false;
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.checkBox3);
-            this.groupBox3.Controls.Add(this.checkBox2);
-            this.groupBox3.Controls.Add(this.checkBox1);
-            this.groupBox3.Location = new System.Drawing.Point(1045, 335);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(376, 53);
-            this.groupBox3.TabIndex = 28;
-            this.groupBox3.TabStop = false;
-            // 
-            // rbtn_Male
-            // 
-            this.rbtn_Male.AutoSize = true;
-            this.rbtn_Male.Location = new System.Drawing.Point(30, 19);
-            this.rbtn_Male.Name = "rbtn_Male";
-            this.rbtn_Male.Size = new System.Drawing.Size(69, 22);
-            this.rbtn_Male.TabIndex = 0;
-            this.rbtn_Male.TabStop = true;
-            this.rbtn_Male.Text = "Male";
-            this.rbtn_Male.UseVisualStyleBackColor = true;
-            // 
-            // rbtn_Female
-            // 
-            this.rbtn_Female.AutoSize = true;
-            this.rbtn_Female.Location = new System.Drawing.Point(168, 19);
-            this.rbtn_Female.Name = "rbtn_Female";
-            this.rbtn_Female.Size = new System.Drawing.Size(86, 22);
-            this.rbtn_Female.TabIndex = 1;
-            this.rbtn_Female.TabStop = true;
-            this.rbtn_Female.Text = "Female";
-            this.rbtn_Female.UseVisualStyleBackColor = true;
-            // 
-            // rbtn_Morning
-            // 
-            this.rbtn_Morning.AutoSize = true;
-            this.rbtn_Morning.Location = new System.Drawing.Point(17, 19);
-            this.rbtn_Morning.Name = "rbtn_Morning";
-            this.rbtn_Morning.Size = new System.Drawing.Size(98, 22);
-            this.rbtn_Morning.TabIndex = 2;
-            this.rbtn_Morning.TabStop = true;
-            this.rbtn_Morning.Text = "Morning";
-            this.rbtn_Morning.UseVisualStyleBackColor = true;
-            // 
-            // rbtn_Afternoon
-            // 
-            this.rbtn_Afternoon.AutoSize = true;
-            this.rbtn_Afternoon.Location = new System.Drawing.Point(143, 19);
-            this.rbtn_Afternoon.Name = "rbtn_Afternoon";
-            this.rbtn_Afternoon.Size = new System.Drawing.Size(111, 22);
-            this.rbtn_Afternoon.TabIndex = 3;
-            this.rbtn_Afternoon.TabStop = true;
-            this.rbtn_Afternoon.Text = "Afternoon";
-            this.rbtn_Afternoon.UseVisualStyleBackColor = true;
-            // 
-            // rbtn_Night
-            // 
-            this.rbtn_Night.AutoSize = true;
-            this.rbtn_Night.Location = new System.Drawing.Point(276, 19);
-            this.rbtn_Night.Name = "rbtn_Night";
-            this.rbtn_Night.Size = new System.Drawing.Size(74, 22);
-            this.rbtn_Night.TabIndex = 4;
-            this.rbtn_Night.TabStop = true;
-            this.rbtn_Night.Text = "Night";
-            this.rbtn_Night.UseVisualStyleBackColor = true;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(17, 20);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(79, 22);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "Dmart";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // checkedListBox1
-            // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
-            "Playing",
-            "Reading",
-            "Writing",
-            "Eating",
-            "Other"});
-            this.checkedListBox1.Location = new System.Drawing.Point(1045, 418);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(170, 114);
-            this.checkedListBox1.TabIndex = 29;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Uighur", 18F, System.Drawing.FontStyle.Bold);
-            this.textBox1.Location = new System.Drawing.Point(1246, 449);
-            this.textBox1.MaxLength = 30;
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(228, 83);
-            this.textBox1.TabIndex = 30;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(133, 20);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(65, 22);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "Tata";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(253, 20);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(77, 22);
-            this.checkBox3.TabIndex = 2;
-            this.checkBox3.Text = "G pay";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.lbl_Department.AutoSize = true;
+            this.lbl_Department.Font = new System.Drawing.Font("Microsoft Uighur", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Department.Location = new System.Drawing.Point(824, 239);
+            this.lbl_Department.Name = "lbl_Department";
+            this.lbl_Department.Size = new System.Drawing.Size(183, 52);
+            this.lbl_Department.TabIndex = 19;
+            this.lbl_Department.Text = "Department";
             // 
             // frm_Add_New_Staff
             // 
@@ -437,17 +439,17 @@
             this.Controls.Add(this.btn_Save);
             this.Name = "frm_Add_New_Staff";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "frm_Add_New_Staff";
+            this.Text = "Add New Staff";
             this.pnl_Add_New_Staff.ResumeLayout(false);
             this.pnl_Add_New_Staff.PerformLayout();
             this.gb_Staff_Details.ResumeLayout(false);
             this.gb_Staff_Details.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.gb_Project.ResumeLayout(false);
+            this.gb_Project.PerformLayout();
+            this.gb_Shift_Timing.ResumeLayout(false);
+            this.gb_Shift_Timing.PerformLayout();
+            this.gb_Gender.ResumeLayout(false);
+            this.gb_Gender.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -471,21 +473,21 @@
         private System.Windows.Forms.Label lbl_Shift_Timing;
         private System.Windows.Forms.Label lbl_Gender;
         private System.Windows.Forms.Label lbl_Department;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.TextBox tb_Hobbies;
+        private System.Windows.Forms.CheckedListBox clb_Hobbies;
+        private System.Windows.Forms.GroupBox gb_Project;
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox gb_Shift_Timing;
         private System.Windows.Forms.RadioButton rbtn_Night;
         private System.Windows.Forms.RadioButton rbtn_Afternoon;
         private System.Windows.Forms.RadioButton rbtn_Morning;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gb_Gender;
         private System.Windows.Forms.RadioButton rbtn_Female;
         private System.Windows.Forms.RadioButton rbtn_Male;
         private System.Windows.Forms.ComboBox cmb_Designation;
         private System.Windows.Forms.TextBox tb_Staff_Id;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtp_Date_Of_Birth;
     }
 }

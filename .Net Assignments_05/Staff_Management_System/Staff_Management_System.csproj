@@ -46,17 +46,47 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frm_Add_Department.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Add_Department.Designer.cs">
+      <DependentUpon>frm_Add_Department.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_Add_New_Staff.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_Add_New_Staff.Designer.cs">
       <DependentUpon>frm_Add_New_Staff.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_Add_New_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Add_New_User.Designer.cs">
+      <DependentUpon>frm_Add_New_User.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_Login.Designer.cs">
       <DependentUpon>frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Staff_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Staff_List.Designer.cs">
+      <DependentUpon>frm_Staff_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Update_Department.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Update_Department.Designer.cs">
+      <DependentUpon>frm_Update_Department.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Update_Staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Update_Staff.Designer.cs">
+      <DependentUpon>frm_Update_Staff.cs</DependentUpon>
     </Compile>
     <Compile Include="MDI_Staff_Management_System.cs">
       <SubType>Form</SubType>
@@ -66,11 +96,26 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frm_Add_Department.resx">
+      <DependentUpon>frm_Add_Department.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_Add_New_Staff.resx">
       <DependentUpon>frm_Add_New_Staff.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_Add_New_User.resx">
+      <DependentUpon>frm_Add_New_User.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_Login.resx">
       <DependentUpon>frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Staff_List.resx">
+      <DependentUpon>frm_Staff_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Update_Department.resx">
+      <DependentUpon>frm_Update_Department.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Update_Staff.resx">
+      <DependentUpon>frm_Update_Staff.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MDI_Staff_Management_System.resx">
       <DependentUpon>MDI_Staff_Management_System.cs</DependentUpon>

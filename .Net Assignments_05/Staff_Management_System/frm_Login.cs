@@ -24,5 +24,10 @@ namespace Staff_Management_System
 
             this.Hide();
         }
+
+        private void btn_Close_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

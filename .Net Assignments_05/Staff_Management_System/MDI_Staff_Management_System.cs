@@ -33,6 +33,15 @@ namespace Staff_Management_System
             ANS.Show();
         }
 
+        private void btn_Log_Out_Click(object sender, EventArgs e)
+        {
+            frm_Login Lg = new frm_Login();
+
+            Lg.Show();
+
+            this.Hide();
+        }
+
        
     }
 }
