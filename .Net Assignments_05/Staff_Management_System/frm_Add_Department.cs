@@ -15,5 +15,7 @@ namespace Staff_Management_System
         {
             InitializeComponent();
         }
+
+        
     }
 }

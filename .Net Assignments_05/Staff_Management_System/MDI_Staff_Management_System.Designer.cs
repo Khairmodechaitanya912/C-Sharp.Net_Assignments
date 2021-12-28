@@ -103,6 +103,7 @@
             this.addDepartmentToolStripMenuItem.Name = "addDepartmentToolStripMenuItem";
             this.addDepartmentToolStripMenuItem.Size = new System.Drawing.Size(247, 28);
             this.addDepartmentToolStripMenuItem.Text = "Add Department";
+            this.addDepartmentToolStripMenuItem.Click += new System.EventHandler(this.addDepartmentToolStripMenuItem_Click);
             // 
             // updateDepartmentToolStripMenuItem
             // 

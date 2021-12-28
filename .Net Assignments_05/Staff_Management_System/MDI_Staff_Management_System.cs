@@ -42,6 +42,17 @@ namespace Staff_Management_System
             this.Hide();
         }
 
+        private void addDepartmentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_Add_Department AD = new frm_Add_Department();
+
+            AD.MdiParent = this;
+
+            AD.WindowState = FormWindowState.Maximized;
+
+            AD.Show();
+        }
+
        
     }
 }
