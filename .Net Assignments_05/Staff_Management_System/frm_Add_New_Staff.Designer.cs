@@ -41,9 +41,9 @@
             this.tb_Hobbies = new System.Windows.Forms.TextBox();
             this.clb_Hobbies = new System.Windows.Forms.CheckedListBox();
             this.gb_Project = new System.Windows.Forms.GroupBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.cb_G_Pay = new System.Windows.Forms.CheckBox();
+            this.cb_Tata = new System.Windows.Forms.CheckBox();
+            this.cb_Dmart = new System.Windows.Forms.CheckBox();
             this.gb_Shift_Timing = new System.Windows.Forms.GroupBox();
             this.rbtn_Night = new System.Windows.Forms.RadioButton();
             this.rbtn_Afternoon = new System.Windows.Forms.RadioButton();
@@ -61,6 +61,8 @@
             this.lbl_Shift_Timing = new System.Windows.Forms.Label();
             this.lbl_Gender = new System.Windows.Forms.Label();
             this.lbl_Department = new System.Windows.Forms.Label();
+            this.btn_Close = new System.Windows.Forms.Button();
+            this.btn_Refresh = new System.Windows.Forms.Button();
             this.pnl_Add_New_Staff.SuspendLayout();
             this.gb_Staff_Details.SuspendLayout();
             this.gb_Project.SuspendLayout();
@@ -149,12 +151,13 @@
             // 
             this.btn_Save.BackColor = System.Drawing.Color.Coral;
             this.btn_Save.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Save.Location = new System.Drawing.Point(670, 727);
+            this.btn_Save.Location = new System.Drawing.Point(684, 727);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(128, 56);
             this.btn_Save.TabIndex = 12;
             this.btn_Save.Text = "Save";
             this.btn_Save.UseVisualStyleBackColor = false;
+            this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
             // 
             // gb_Staff_Details
             // 
@@ -211,47 +214,48 @@
             this.clb_Hobbies.Name = "clb_Hobbies";
             this.clb_Hobbies.Size = new System.Drawing.Size(170, 136);
             this.clb_Hobbies.TabIndex = 10;
+            
             // 
             // gb_Project
             // 
-            this.gb_Project.Controls.Add(this.checkBox3);
-            this.gb_Project.Controls.Add(this.checkBox2);
-            this.gb_Project.Controls.Add(this.checkBox1);
+            this.gb_Project.Controls.Add(this.cb_G_Pay);
+            this.gb_Project.Controls.Add(this.cb_Tata);
+            this.gb_Project.Controls.Add(this.cb_Dmart);
             this.gb_Project.Location = new System.Drawing.Point(1045, 335);
             this.gb_Project.Name = "gb_Project";
             this.gb_Project.Size = new System.Drawing.Size(376, 53);
             this.gb_Project.TabIndex = 9;
             this.gb_Project.TabStop = false;
             // 
-            // checkBox3
+            // cb_G_Pay
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(253, 20);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(77, 22);
-            this.checkBox3.TabIndex = 2;
-            this.checkBox3.Text = "G pay";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.cb_G_Pay.AutoSize = true;
+            this.cb_G_Pay.Location = new System.Drawing.Point(253, 20);
+            this.cb_G_Pay.Name = "cb_G_Pay";
+            this.cb_G_Pay.Size = new System.Drawing.Size(77, 22);
+            this.cb_G_Pay.TabIndex = 2;
+            this.cb_G_Pay.Text = "G pay";
+            this.cb_G_Pay.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // cb_Tata
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(133, 20);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(65, 22);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "Tata";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.cb_Tata.AutoSize = true;
+            this.cb_Tata.Location = new System.Drawing.Point(143, 19);
+            this.cb_Tata.Name = "cb_Tata";
+            this.cb_Tata.Size = new System.Drawing.Size(65, 22);
+            this.cb_Tata.TabIndex = 1;
+            this.cb_Tata.Text = "Tata";
+            this.cb_Tata.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // cb_Dmart
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(17, 20);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(79, 22);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "Dmart";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.cb_Dmart.AutoSize = true;
+            this.cb_Dmart.Location = new System.Drawing.Point(17, 20);
+            this.cb_Dmart.Name = "cb_Dmart";
+            this.cb_Dmart.Size = new System.Drawing.Size(79, 22);
+            this.cb_Dmart.TabIndex = 0;
+            this.cb_Dmart.Text = "Dmart";
+            this.cb_Dmart.UseVisualStyleBackColor = true;
             // 
             // gb_Shift_Timing
             // 
@@ -427,6 +431,30 @@
             this.lbl_Department.TabIndex = 19;
             this.lbl_Department.Text = "Department";
             // 
+            // btn_Close
+            // 
+            this.btn_Close.BackColor = System.Drawing.Color.Coral;
+            this.btn_Close.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Close.Location = new System.Drawing.Point(1099, 727);
+            this.btn_Close.Name = "btn_Close";
+            this.btn_Close.Size = new System.Drawing.Size(128, 56);
+            this.btn_Close.TabIndex = 14;
+            this.btn_Close.Text = "Close";
+            this.btn_Close.UseVisualStyleBackColor = false;
+            this.btn_Close.Click += new System.EventHandler(this.btn_Close_Click);
+            // 
+            // btn_Refresh
+            // 
+            this.btn_Refresh.BackColor = System.Drawing.Color.Coral;
+            this.btn_Refresh.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Refresh.Location = new System.Drawing.Point(246, 727);
+            this.btn_Refresh.Name = "btn_Refresh";
+            this.btn_Refresh.Size = new System.Drawing.Size(142, 56);
+            this.btn_Refresh.TabIndex = 13;
+            this.btn_Refresh.Text = "Refresh";
+            this.btn_Refresh.UseVisualStyleBackColor = false;
+            this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
+            // 
             // frm_Add_New_Staff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -434,12 +462,15 @@
             this.BackColor = System.Drawing.Color.LavenderBlush;
             this.ClientSize = new System.Drawing.Size(1504, 795);
             this.ControlBox = false;
+            this.Controls.Add(this.btn_Refresh);
+            this.Controls.Add(this.btn_Close);
             this.Controls.Add(this.gb_Staff_Details);
             this.Controls.Add(this.pnl_Add_New_Staff);
             this.Controls.Add(this.btn_Save);
             this.Name = "frm_Add_New_Staff";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Add New Staff";
+            this.Load += new System.EventHandler(this.frm_Add_New_Staff_Load);
             this.pnl_Add_New_Staff.ResumeLayout(false);
             this.pnl_Add_New_Staff.PerformLayout();
             this.gb_Staff_Details.ResumeLayout(false);
@@ -476,9 +507,9 @@
         private System.Windows.Forms.TextBox tb_Hobbies;
         private System.Windows.Forms.CheckedListBox clb_Hobbies;
         private System.Windows.Forms.GroupBox gb_Project;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox cb_G_Pay;
+        private System.Windows.Forms.CheckBox cb_Tata;
+        private System.Windows.Forms.CheckBox cb_Dmart;
         private System.Windows.Forms.GroupBox gb_Shift_Timing;
         private System.Windows.Forms.RadioButton rbtn_Night;
         private System.Windows.Forms.RadioButton rbtn_Afternoon;
@@ -489,5 +520,7 @@
         private System.Windows.Forms.ComboBox cmb_Designation;
         private System.Windows.Forms.TextBox tb_Staff_Id;
         private System.Windows.Forms.DateTimePicker dtp_Date_Of_Birth;
+        private System.Windows.Forms.Button btn_Close;
+        private System.Windows.Forms.Button btn_Refresh;
     }
 }

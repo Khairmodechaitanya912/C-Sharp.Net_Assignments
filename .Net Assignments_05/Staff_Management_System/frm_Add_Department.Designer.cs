@@ -63,7 +63,7 @@
             // 
             this.lbl_Add_Department.AutoSize = true;
             this.lbl_Add_Department.Font = new System.Drawing.Font("Microsoft Uighur", 70F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Add_Department.Location = new System.Drawing.Point(486, -9);
+            this.lbl_Add_Department.Location = new System.Drawing.Point(422, -13);
             this.lbl_Add_Department.Name = "lbl_Add_Department";
             this.lbl_Add_Department.Size = new System.Drawing.Size(619, 152);
             this.lbl_Add_Department.TabIndex = 0;
@@ -100,7 +100,7 @@
             // 
             this.pnl_Department.BackColor = System.Drawing.Color.Snow;
             this.pnl_Department.Controls.Add(this.btn_Save);
-            this.pnl_Department.Location = new System.Drawing.Point(272, 237);
+            this.pnl_Department.Location = new System.Drawing.Point(227, 218);
             this.pnl_Department.Name = "pnl_Department";
             this.pnl_Department.Size = new System.Drawing.Size(1080, 471);
             this.pnl_Department.TabIndex = 20;
@@ -109,12 +109,13 @@
             // 
             this.btn_Save.BackColor = System.Drawing.Color.Coral;
             this.btn_Save.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Save.Location = new System.Drawing.Point(494, 380);
+            this.btn_Save.Location = new System.Drawing.Point(480, 382);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(128, 56);
             this.btn_Save.TabIndex = 3;
             this.btn_Save.Text = "Save";
             this.btn_Save.UseVisualStyleBackColor = false;
+            this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
             // 
             // frm_Add_Department
             // 
@@ -134,6 +135,7 @@
             this.Name = "frm_Add_Department";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Add Department";
+            this.Load += new System.EventHandler(this.frm_Add_Department_Load);
             this.pnl_Add_Department.ResumeLayout(false);
             this.pnl_Add_Department.PerformLayout();
             this.pnl_Department.ResumeLayout(false);
