@@ -214,7 +214,6 @@
             this.clb_Hobbies.Name = "clb_Hobbies";
             this.clb_Hobbies.Size = new System.Drawing.Size(170, 136);
             this.clb_Hobbies.TabIndex = 10;
-            
             // 
             // gb_Project
             // 
@@ -338,6 +337,9 @@
             this.cmb_Designation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_Designation.Font = new System.Drawing.Font("Microsoft Uighur", 18F, System.Drawing.FontStyle.Bold);
             this.cmb_Designation.FormattingEnabled = true;
+            this.cmb_Designation.Items.AddRange(new object[] {
+            "Hr",
+            "Co"});
             this.cmb_Designation.Location = new System.Drawing.Point(317, 449);
             this.cmb_Designation.Name = "cmb_Designation";
             this.cmb_Designation.Size = new System.Drawing.Size(320, 45);

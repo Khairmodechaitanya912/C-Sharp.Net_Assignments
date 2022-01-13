@@ -9,11 +9,12 @@ using System.Windows.Forms;
 
 namespace Staff_Management_System
 {
-    public partial class frm_Add_New_User : Form
+    public partial class frm_User_Management : Form
     {
-        public frm_Add_New_User()
+        public frm_User_Management()
         {
             InitializeComponent();
         }
+
     }
 }

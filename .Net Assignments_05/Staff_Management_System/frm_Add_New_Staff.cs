@@ -83,7 +83,11 @@ namespace Staff_Management_System
             cb_Dmart.Checked = false;
             cb_Tata.Checked = false;
             cb_G_Pay.Checked = false;
-            clb_Hobbies.ResetText();
+
+            foreach (int itemChecked in clb_Hobbies.CheckedIndices)
+            {
+                clb_Hobbies.SetItemChecked(itemChecked,false);
+            }
 
         }
 
@@ -94,7 +98,82 @@ namespace Staff_Management_System
 
         private void btn_Save_Click(object sender, EventArgs e)
         {
+            Con_Open();
 
+            string Gender = "";
+            string Shift_T = "";
+            string Projects = "";
+
+            if (rbtn_Male.Checked)
+            {
+                Gender = rbtn_Male.Text;
+            }
+
+            else if (rbtn_Female.Checked)
+            {
+                Gender = rbtn_Female.Text;
+            }
+
+            if (rbtn_Morning.Checked)
+            {
+                Shift_T = rbtn_Morning.Text;
+            }
+
+            else if(rbtn_Afternoon.Checked)
+            {
+                Shift_T = rbtn_Afternoon.Text;
+            }
+
+            else if (rbtn_Night.Checked)
+            {
+                Shift_T = rbtn_Night.Text;
+            }
+
+            if (cb_Dmart.Checked)
+            {
+                Projects = cb_Dmart.Text;
+            }
+
+            else if(cb_G_Pay.Checked)
+            {
+                Projects = cb_G_Pay.Text;
+            }
+
+            else if(cb_Tata.Checked)
+            {
+                Projects = cb_Tata.Text;
+            }
+            if (tb_Staff_Id.Text != "" && tb_Staff_Name.Text != "" && tb_Mob_No.Text != "")
+            {
+                Con_Open();
+
+                SqlCommand Cmd = new SqlCommand();
+
+                Cmd.Connection = Con;
+
+                Cmd.CommandText = "Insert Into Staff_Details (Staff_Id, Staff_Name, Date_Of_Birth, Mobile_No, Designation, Gender, Shift_Timing, Department, Project) Values (@ID,@Name,@DOB,@MOB,@Desig,'" + Gender + "','" + Shift_T + "',@Dept, '" + Projects + "')";
+
+                Cmd.Parameters.Add("ID", SqlDbType.Int).Value = tb_Staff_Id.Text;
+                Cmd.Parameters.Add("Name", SqlDbType.NVarChar).Value = tb_Staff_Name.Text;
+                Cmd.Parameters.Add("DOB", SqlDbType.Date).Value = dtp_Date_Of_Birth.Value.Date;
+                Cmd.Parameters.Add("MOB", SqlDbType.Decimal).Value = tb_Mob_No.Text;
+                Cmd.Parameters.Add("Desig", SqlDbType.NVarChar).Value = cmb_Designation.Text;
+                Cmd.Parameters.Add("Dept", SqlDbType.NVarChar).Value = cmb_Department.Text;
+
+                Cmd.ExecuteNonQuery();
+
+                MessageBox.Show("Staff Saved Successfully...!!", "Saving", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                Clear_Control();
+
+                Con_Close();
+            }
+            else
+            {
+                MessageBox.Show("Fill All Information...!!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+            Con_Close();
         }
 
         private void btn_Refresh_Click(object sender, EventArgs e)
