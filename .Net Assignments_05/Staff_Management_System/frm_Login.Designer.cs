@@ -147,7 +147,7 @@
             this.cmb_Username.Location = new System.Drawing.Point(533, 316);
             this.cmb_Username.Name = "cmb_Username";
             this.cmb_Username.Size = new System.Drawing.Size(320, 45);
-            this.cmb_Username.TabIndex = 9;
+            this.cmb_Username.TabIndex = 2;
             // 
             // frm_Login
             // 

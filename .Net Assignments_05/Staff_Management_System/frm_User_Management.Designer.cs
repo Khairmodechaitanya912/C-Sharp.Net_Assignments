@@ -128,7 +128,7 @@
             this.btn_Save.Location = new System.Drawing.Point(632, 532);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(128, 56);
-            this.btn_Save.TabIndex = 18;
+            this.btn_Save.TabIndex = 5;
             this.btn_Save.Text = "Save";
             this.btn_Save.UseVisualStyleBackColor = false;
             // 
@@ -140,7 +140,7 @@
             this.tb_Confirm_Password_A.Name = "tb_Confirm_Password_A";
             this.tb_Confirm_Password_A.PasswordChar = '*';
             this.tb_Confirm_Password_A.Size = new System.Drawing.Size(320, 40);
-            this.tb_Confirm_Password_A.TabIndex = 16;
+            this.tb_Confirm_Password_A.TabIndex = 4;
             // 
             // lbl_Confirm_Password_A
             // 
@@ -171,7 +171,7 @@
             this.tb_Password_A.Name = "tb_Password_A";
             this.tb_Password_A.PasswordChar = '*';
             this.tb_Password_A.Size = new System.Drawing.Size(320, 40);
-            this.tb_Password_A.TabIndex = 11;
+            this.tb_Password_A.TabIndex = 3;
             // 
             // tb_Username_A
             // 
@@ -180,7 +180,7 @@
             this.tb_Username_A.MaxLength = 10;
             this.tb_Username_A.Name = "tb_Username_A";
             this.tb_Username_A.Size = new System.Drawing.Size(320, 40);
-            this.tb_Username_A.TabIndex = 10;
+            this.tb_Username_A.TabIndex = 2;
             // 
             // cmb_User_Role_A
             // 
@@ -195,7 +195,7 @@
             this.cmb_User_Role_A.Location = new System.Drawing.Point(798, 174);
             this.cmb_User_Role_A.Name = "cmb_User_Role_A";
             this.cmb_User_Role_A.Size = new System.Drawing.Size(320, 45);
-            this.cmb_User_Role_A.TabIndex = 9;
+            this.cmb_User_Role_A.TabIndex = 1;
             // 
             // lbl_Password_A
             // 
@@ -254,7 +254,7 @@
             this.btn_Update.Location = new System.Drawing.Point(631, 530);
             this.btn_Update.Name = "btn_Update";
             this.btn_Update.Size = new System.Drawing.Size(128, 56);
-            this.btn_Update.TabIndex = 28;
+            this.btn_Update.TabIndex = 10;
             this.btn_Update.Text = "Update";
             this.btn_Update.UseVisualStyleBackColor = false;
             // 
@@ -266,7 +266,7 @@
             this.tb_Confirm_Password_U.Name = "tb_Confirm_Password_U";
             this.tb_Confirm_Password_U.PasswordChar = '*';
             this.tb_Confirm_Password_U.Size = new System.Drawing.Size(320, 40);
-            this.tb_Confirm_Password_U.TabIndex = 26;
+            this.tb_Confirm_Password_U.TabIndex = 9;
             // 
             // lbl_Confirm_Password_U
             // 
@@ -297,7 +297,7 @@
             this.tb_Password_U.Name = "tb_Password_U";
             this.tb_Password_U.PasswordChar = '*';
             this.tb_Password_U.Size = new System.Drawing.Size(320, 40);
-            this.tb_Password_U.TabIndex = 22;
+            this.tb_Password_U.TabIndex = 8;
             // 
             // cmb_Username_U
             // 
@@ -312,7 +312,7 @@
             this.cmb_Username_U.Location = new System.Drawing.Point(797, 266);
             this.cmb_Username_U.Name = "cmb_Username_U";
             this.cmb_Username_U.Size = new System.Drawing.Size(320, 45);
-            this.cmb_Username_U.TabIndex = 20;
+            this.cmb_Username_U.TabIndex = 7;
             // 
             // cmb_User_Role_U
             // 
@@ -327,7 +327,7 @@
             this.cmb_User_Role_U.Location = new System.Drawing.Point(797, 172);
             this.cmb_User_Role_U.Name = "cmb_User_Role_U";
             this.cmb_User_Role_U.Size = new System.Drawing.Size(320, 45);
-            this.cmb_User_Role_U.TabIndex = 20;
+            this.cmb_User_Role_U.TabIndex = 6;
             // 
             // lbl_Password_U
             // 
@@ -384,7 +384,7 @@
             this.btn_Delete.Location = new System.Drawing.Point(586, 490);
             this.btn_Delete.Name = "btn_Delete";
             this.btn_Delete.Size = new System.Drawing.Size(128, 56);
-            this.btn_Delete.TabIndex = 36;
+            this.btn_Delete.TabIndex = 14;
             this.btn_Delete.Text = "Delete";
             this.btn_Delete.UseVisualStyleBackColor = false;
             // 
@@ -407,7 +407,7 @@
             this.tb_Admin_Password_D.Name = "tb_Admin_Password_D";
             this.tb_Admin_Password_D.PasswordChar = '*';
             this.tb_Admin_Password_D.Size = new System.Drawing.Size(320, 40);
-            this.tb_Admin_Password_D.TabIndex = 32;
+            this.tb_Admin_Password_D.TabIndex = 13;
             // 
             // cmb_Username_D
             // 
@@ -422,7 +422,7 @@
             this.cmb_Username_D.Location = new System.Drawing.Point(775, 290);
             this.cmb_Username_D.Name = "cmb_Username_D";
             this.cmb_Username_D.Size = new System.Drawing.Size(320, 45);
-            this.cmb_Username_D.TabIndex = 31;
+            this.cmb_Username_D.TabIndex = 12;
             // 
             // cmb_User_Role_D
             // 
@@ -437,7 +437,7 @@
             this.cmb_User_Role_D.Location = new System.Drawing.Point(775, 196);
             this.cmb_User_Role_D.Name = "cmb_User_Role_D";
             this.cmb_User_Role_D.Size = new System.Drawing.Size(320, 45);
-            this.cmb_User_Role_D.TabIndex = 30;
+            this.cmb_User_Role_D.TabIndex = 11;
             // 
             // lbl_Admin_Password_D
             // 
