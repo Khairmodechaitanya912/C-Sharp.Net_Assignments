@@ -106,27 +106,32 @@ namespace Staff_Management_System
 
             if (rbtn_Male.Checked)
             {
-                Gender = rbtn_Male.Text;
+                //Gender = rbtn_Male.Text;
+                Gender = "0";
             }
 
             else if (rbtn_Female.Checked)
             {
-                Gender = rbtn_Female.Text;
+                //Gender = rbtn_Female.Text;
+                Gender = "1";
             }
 
             if (rbtn_Morning.Checked)
             {
-                Shift_T = rbtn_Morning.Text;
+                //Shift_T = rbtn_Morning.Text;
+                Shift_T = "1";
             }
 
             else if(rbtn_Afternoon.Checked)
             {
-                Shift_T = rbtn_Afternoon.Text;
+                //Shift_T = rbtn_Afternoon.Text;
+                Shift_T = "2";
             }
 
             else if (rbtn_Night.Checked)
             {
-                Shift_T = rbtn_Night.Text;
+                //Shift_T = rbtn_Night.Text;
+                Shift_T = "3";
             }
 
             if (cb_Dmart.Checked)

@@ -40,6 +40,8 @@
             this.addUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lbl_Logged_User = new System.Windows.Forms.Label();
             this.btn_Log_Out = new System.Windows.Forms.Button();
+            this.updateUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -114,7 +116,9 @@
             // userManagementToolStripMenuItem
             // 
             this.userManagementToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addUserToolStripMenuItem});
+            this.addUserToolStripMenuItem,
+            this.updateUserToolStripMenuItem,
+            this.deleteUserToolStripMenuItem});
             this.userManagementToolStripMenuItem.Name = "userManagementToolStripMenuItem";
             this.userManagementToolStripMenuItem.Size = new System.Drawing.Size(177, 34);
             this.userManagementToolStripMenuItem.Text = "User Management";
@@ -122,7 +126,7 @@
             // addUserToolStripMenuItem
             // 
             this.addUserToolStripMenuItem.Name = "addUserToolStripMenuItem";
-            this.addUserToolStripMenuItem.Size = new System.Drawing.Size(159, 28);
+            this.addUserToolStripMenuItem.Size = new System.Drawing.Size(191, 28);
             this.addUserToolStripMenuItem.Text = "Add User";
             // 
             // lbl_Logged_User
@@ -147,6 +151,18 @@
             this.btn_Log_Out.Text = "Log Out";
             this.btn_Log_Out.UseVisualStyleBackColor = false;
             this.btn_Log_Out.Click += new System.EventHandler(this.btn_Log_Out_Click);
+            // 
+            // updateUserToolStripMenuItem
+            // 
+            this.updateUserToolStripMenuItem.Name = "updateUserToolStripMenuItem";
+            this.updateUserToolStripMenuItem.Size = new System.Drawing.Size(191, 28);
+            this.updateUserToolStripMenuItem.Text = "Update User ";
+            // 
+            // deleteUserToolStripMenuItem
+            // 
+            this.deleteUserToolStripMenuItem.Name = "deleteUserToolStripMenuItem";
+            this.deleteUserToolStripMenuItem.Size = new System.Drawing.Size(191, 28);
+            this.deleteUserToolStripMenuItem.Text = "Delete User";
             // 
             // MDI_Staff_Management_System
             // 
@@ -187,6 +203,8 @@
         private System.Windows.Forms.ToolStripMenuItem addUserToolStripMenuItem;
         private System.Windows.Forms.Label lbl_Logged_User;
         private System.Windows.Forms.Button btn_Log_Out;
+        private System.Windows.Forms.ToolStripMenuItem updateUserToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deleteUserToolStripMenuItem;
     }
 }
 

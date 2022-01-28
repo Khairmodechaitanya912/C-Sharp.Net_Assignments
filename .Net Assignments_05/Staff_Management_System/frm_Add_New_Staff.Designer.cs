@@ -339,7 +339,7 @@
             this.cmb_Designation.FormattingEnabled = true;
             this.cmb_Designation.Items.AddRange(new object[] {
             "Hr",
-            "Co"});
+            "CEO"});
             this.cmb_Designation.Location = new System.Drawing.Point(317, 449);
             this.cmb_Designation.Name = "cmb_Designation";
             this.cmb_Designation.Size = new System.Drawing.Size(320, 45);
