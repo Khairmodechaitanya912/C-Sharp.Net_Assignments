@@ -38,10 +38,10 @@
             this.updateDepartmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.userManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lbl_Logged_User = new System.Windows.Forms.Label();
-            this.btn_Log_Out = new System.Windows.Forms.Button();
             this.updateUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lbl_Logged_User = new System.Windows.Forms.Label();
+            this.btn_Log_Out = new System.Windows.Forms.Button();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -112,6 +112,7 @@
             this.updateDepartmentToolStripMenuItem.Name = "updateDepartmentToolStripMenuItem";
             this.updateDepartmentToolStripMenuItem.Size = new System.Drawing.Size(247, 28);
             this.updateDepartmentToolStripMenuItem.Text = "Update Department";
+            this.updateDepartmentToolStripMenuItem.Click += new System.EventHandler(this.updateDepartmentToolStripMenuItem_Click);
             // 
             // userManagementToolStripMenuItem
             // 
@@ -128,6 +129,18 @@
             this.addUserToolStripMenuItem.Name = "addUserToolStripMenuItem";
             this.addUserToolStripMenuItem.Size = new System.Drawing.Size(191, 28);
             this.addUserToolStripMenuItem.Text = "Add User";
+            // 
+            // updateUserToolStripMenuItem
+            // 
+            this.updateUserToolStripMenuItem.Name = "updateUserToolStripMenuItem";
+            this.updateUserToolStripMenuItem.Size = new System.Drawing.Size(191, 28);
+            this.updateUserToolStripMenuItem.Text = "Update User ";
+            // 
+            // deleteUserToolStripMenuItem
+            // 
+            this.deleteUserToolStripMenuItem.Name = "deleteUserToolStripMenuItem";
+            this.deleteUserToolStripMenuItem.Size = new System.Drawing.Size(191, 28);
+            this.deleteUserToolStripMenuItem.Text = "Delete User";
             // 
             // lbl_Logged_User
             // 
@@ -151,18 +164,6 @@
             this.btn_Log_Out.Text = "Log Out";
             this.btn_Log_Out.UseVisualStyleBackColor = false;
             this.btn_Log_Out.Click += new System.EventHandler(this.btn_Log_Out_Click);
-            // 
-            // updateUserToolStripMenuItem
-            // 
-            this.updateUserToolStripMenuItem.Name = "updateUserToolStripMenuItem";
-            this.updateUserToolStripMenuItem.Size = new System.Drawing.Size(191, 28);
-            this.updateUserToolStripMenuItem.Text = "Update User ";
-            // 
-            // deleteUserToolStripMenuItem
-            // 
-            this.deleteUserToolStripMenuItem.Name = "deleteUserToolStripMenuItem";
-            this.deleteUserToolStripMenuItem.Size = new System.Drawing.Size(191, 28);
-            this.deleteUserToolStripMenuItem.Text = "Delete User";
             // 
             // MDI_Staff_Management_System
             // 

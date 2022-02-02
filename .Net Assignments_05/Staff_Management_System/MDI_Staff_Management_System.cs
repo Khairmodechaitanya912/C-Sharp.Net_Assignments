@@ -53,6 +53,17 @@ namespace Staff_Management_System
             AD.Show();
         }
 
+        private void updateDepartmentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_Update_Department UD = new frm_Update_Department();
+
+            UD.MdiParent = this;
+
+            UD.WindowState = FormWindowState.Maximized;
+
+            UD.Show();
+        }
+
        
     }
 }

@@ -49,7 +49,58 @@ namespace Staff_Management_System
 
         private void btn_Update_Click(object sender, EventArgs e)
         {
+            Con_Open();
 
+            if (tb_Department_Id.Text != "" && tb_Department_Name.Text != "")
+            {
+                Con_Open();
+
+                SqlCommand Cmd = new SqlCommand();
+
+                Cmd.Connection = Con;
+
+                Cmd.CommandText = "Update Department_Details set Department_Name = @DN where Department_ID = @DID";
+
+                Cmd.Parameters.Add("DID", SqlDbType.Int).Value = tb_Department_Id.Text;
+                Cmd.Parameters.Add("DN", SqlDbType.NVarChar).Value = tb_Department_Name.Text;
+
+                Cmd.ExecuteNonQuery();
+
+                MessageBox.Show("Product Details Updated Successfully!!!", "Saving", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                Clear_Control();
+            }
+
+            else
+            {
+                MessageBox.Show("Incomplete Information !!!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            Con_Close();
+        }
+
+        private void btn_Search_Click(object sender, EventArgs e)
+        {
+            Con_Open();
+
+            SqlCommand Cmd = new SqlCommand();
+
+            Cmd.Connection = Con;
+
+            Cmd.CommandText = "Select * From Department_Details where Department_ID = " + tb_Department_Id.Text + "";
+
+            var Obj = Cmd.ExecuteReader();
+
+            if (Obj.Read())
+            {
+                tb_Department_Name.Text = Obj.GetString(Obj.GetOrdinal("Department_Name"));
+            }
+            else
+            {
+                MessageBox.Show("Information is not Available...", "No Record Found", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                Clear_Control();
+            }
+
+            Con_Close();
         }
 
     }

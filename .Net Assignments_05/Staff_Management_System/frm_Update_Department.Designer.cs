@@ -36,6 +36,7 @@
             this.lbl_Update_Department = new System.Windows.Forms.Label();
             this.pnl_Update_Department = new System.Windows.Forms.Panel();
             this.lbl_Department_Id = new System.Windows.Forms.Label();
+            this.btn_Search = new System.Windows.Forms.Button();
             this.pnl_Department.SuspendLayout();
             this.pnl_Update_Department.SuspendLayout();
             this.SuspendLayout();
@@ -60,7 +61,6 @@
             // 
             // tb_Department_Id
             // 
-            this.tb_Department_Id.Enabled = false;
             this.tb_Department_Id.Font = new System.Drawing.Font("Microsoft Uighur", 18F, System.Drawing.FontStyle.Bold);
             this.tb_Department_Id.Location = new System.Drawing.Point(854, 348);
             this.tb_Department_Id.Name = "tb_Department_Id";
@@ -70,6 +70,7 @@
             // pnl_Department
             // 
             this.pnl_Department.BackColor = System.Drawing.Color.Snow;
+            this.pnl_Department.Controls.Add(this.btn_Search);
             this.pnl_Department.Controls.Add(this.btn_Update);
             this.pnl_Department.Location = new System.Drawing.Point(230, 217);
             this.pnl_Department.Name = "pnl_Department";
@@ -80,7 +81,7 @@
             // 
             this.btn_Update.BackColor = System.Drawing.Color.Coral;
             this.btn_Update.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Update.Location = new System.Drawing.Point(480, 382);
+            this.btn_Update.Location = new System.Drawing.Point(633, 382);
             this.btn_Update.Name = "btn_Update";
             this.btn_Update.Size = new System.Drawing.Size(128, 56);
             this.btn_Update.TabIndex = 3;
@@ -117,6 +118,18 @@
             this.lbl_Department_Id.TabIndex = 23;
             this.lbl_Department_Id.Text = "Department Id";
             // 
+            // btn_Search
+            // 
+            this.btn_Search.BackColor = System.Drawing.Color.Coral;
+            this.btn_Search.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Search.Location = new System.Drawing.Point(327, 382);
+            this.btn_Search.Name = "btn_Search";
+            this.btn_Search.Size = new System.Drawing.Size(128, 56);
+            this.btn_Search.TabIndex = 4;
+            this.btn_Search.Text = "Search";
+            this.btn_Search.UseVisualStyleBackColor = false;
+            this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click);
+            // 
             // frm_Update_Department
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -152,5 +165,6 @@
         private System.Windows.Forms.Label lbl_Update_Department;
         private System.Windows.Forms.Panel pnl_Update_Department;
         private System.Windows.Forms.Label lbl_Department_Id;
+        private System.Windows.Forms.Button btn_Search;
     }
 }
