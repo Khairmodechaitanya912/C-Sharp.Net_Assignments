@@ -91,6 +91,30 @@ namespace Staff_Management_System
 
         }
 
+        void Bind_ComboBox()
+        {
+            Con_Open();
+
+            cmb_Department.Items.Clear();
+
+            SqlCommand Cmd = new SqlCommand();
+
+            Cmd.CommandText = "Select Distinct(Department_Name) From Department_Details";
+            Cmd.Connection = Con;
+
+            SqlDataReader obj = Cmd.ExecuteReader();
+
+            while (obj.Read())
+            {
+                cmb_Department.Items.Add(obj.GetString(obj.GetOrdinal("Department_Name")));
+            }
+
+            obj.Dispose();
+            Cmd.Dispose();
+
+            Con_Close();
+        }
+
         private void btn_Close_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -189,6 +213,7 @@ namespace Staff_Management_System
         private void frm_Add_New_Staff_Load(object sender, EventArgs e)
         {
             Clear_Control();
+            Bind_ComboBox();
         }
 
       
