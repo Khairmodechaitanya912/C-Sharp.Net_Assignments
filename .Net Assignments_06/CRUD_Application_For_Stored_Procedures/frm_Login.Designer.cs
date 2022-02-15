@@ -33,8 +33,8 @@
             this.lbl_Username = new System.Windows.Forms.Label();
             this.lbl_Password = new System.Windows.Forms.Label();
             this.btn_Login = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tb_Username = new System.Windows.Forms.TextBox();
+            this.tb_Password = new System.Windows.Forms.TextBox();
             this.btn_Close = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -82,34 +82,37 @@
             // 
             this.btn_Login.BackColor = System.Drawing.Color.Yellow;
             this.btn_Login.Font = new System.Drawing.Font("NSimSun", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Login.Location = new System.Drawing.Point(142, 450);
+            this.btn_Login.Location = new System.Drawing.Point(165, 450);
             this.btn_Login.Name = "btn_Login";
             this.btn_Login.Size = new System.Drawing.Size(108, 47);
             this.btn_Login.TabIndex = 4;
             this.btn_Login.Text = "Login";
             this.btn_Login.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // tb_Username
             // 
-            this.textBox1.Font = new System.Drawing.Font("Mongolian Baiti", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(370, 175);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(294, 50);
-            this.textBox1.TabIndex = 5;
+            this.tb_Username.Font = new System.Drawing.Font("Mongolian Baiti", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Username.Location = new System.Drawing.Point(370, 175);
+            this.tb_Username.MaxLength = 10;
+            this.tb_Username.Name = "tb_Username";
+            this.tb_Username.Size = new System.Drawing.Size(294, 50);
+            this.tb_Username.TabIndex = 5;
             // 
-            // textBox2
+            // tb_Password
             // 
-            this.textBox2.Font = new System.Drawing.Font("Mongolian Baiti", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(370, 307);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(294, 50);
-            this.textBox2.TabIndex = 6;
+            this.tb_Password.Font = new System.Drawing.Font("Mongolian Baiti", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Password.Location = new System.Drawing.Point(370, 307);
+            this.tb_Password.MaxLength = 8;
+            this.tb_Password.Name = "tb_Password";
+            this.tb_Password.PasswordChar = '*';
+            this.tb_Password.Size = new System.Drawing.Size(294, 50);
+            this.tb_Password.TabIndex = 6;
             // 
             // btn_Close
             // 
             this.btn_Close.BackColor = System.Drawing.Color.Yellow;
             this.btn_Close.Font = new System.Drawing.Font("NSimSun", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Close.Location = new System.Drawing.Point(373, 450);
+            this.btn_Close.Location = new System.Drawing.Point(426, 450);
             this.btn_Close.Name = "btn_Close";
             this.btn_Close.Size = new System.Drawing.Size(108, 47);
             this.btn_Close.TabIndex = 7;
@@ -122,14 +125,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(702, 561);
             this.Controls.Add(this.btn_Close);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tb_Password);
+            this.Controls.Add(this.tb_Username);
             this.Controls.Add(this.btn_Login);
             this.Controls.Add(this.lbl_Password);
             this.Controls.Add(this.lbl_Username);
             this.Controls.Add(this.panel1);
             this.Name = "frm_Login";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Login Form";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -144,8 +148,8 @@
         private System.Windows.Forms.Label lbl_Username;
         private System.Windows.Forms.Label lbl_Password;
         private System.Windows.Forms.Button btn_Login;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tb_Username;
+        private System.Windows.Forms.TextBox tb_Password;
         private System.Windows.Forms.Button btn_Close;
     }
 }
