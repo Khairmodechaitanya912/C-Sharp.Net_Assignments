@@ -83,12 +83,14 @@
             this.upToolStripMenuItem.Name = "upToolStripMenuItem";
             this.upToolStripMenuItem.Size = new System.Drawing.Size(204, 28);
             this.upToolStripMenuItem.Text = "Update Staff";
+            this.upToolStripMenuItem.Click += new System.EventHandler(this.upToolStripMenuItem_Click);
             // 
             // staffListToolStripMenuItem
             // 
             this.staffListToolStripMenuItem.Name = "staffListToolStripMenuItem";
             this.staffListToolStripMenuItem.Size = new System.Drawing.Size(204, 28);
             this.staffListToolStripMenuItem.Text = "Staff List";
+            this.staffListToolStripMenuItem.Click += new System.EventHandler(this.staffListToolStripMenuItem_Click);
             // 
             // departmentToolStripMenuItem
             // 

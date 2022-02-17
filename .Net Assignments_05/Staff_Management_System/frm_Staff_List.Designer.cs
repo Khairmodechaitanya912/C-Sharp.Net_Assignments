@@ -32,12 +32,6 @@
             this.pnl_Add_New_Staff = new System.Windows.Forms.Panel();
             this.lbl_Add_New_Staff = new System.Windows.Forms.Label();
             this.dgv_All_Staff_List = new System.Windows.Forms.DataGridView();
-            this.btn_Refresh = new System.Windows.Forms.Button();
-            this.btn_Close = new System.Windows.Forms.Button();
-            this.btn_Search = new System.Windows.Forms.Button();
-            this.dB_Staff_Management_SystemDataSet = new Staff_Management_System.DB_Staff_Management_SystemDataSet();
-            this.staffDetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.staff_DetailsTableAdapter = new Staff_Management_System.DB_Staff_Management_SystemDataSetTableAdapters.Staff_DetailsTableAdapter();
             this.staffIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.staffNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateOfBirthDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,13 +42,18 @@
             this.departmentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.projectDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hobbiesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.userIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.staffDetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dB_Staff_Management_SystemDataSet = new Staff_Management_System.DB_Staff_Management_SystemDataSet();
+            this.btn_Refresh = new System.Windows.Forms.Button();
+            this.btn_Close = new System.Windows.Forms.Button();
+            this.btn_Search = new System.Windows.Forms.Button();
+            this.staff_DetailsTableAdapter = new Staff_Management_System.DB_Staff_Management_SystemDataSetTableAdapters.Staff_DetailsTableAdapter();
             this.lbl_Department = new System.Windows.Forms.Label();
             this.cmb_Department = new System.Windows.Forms.ComboBox();
             this.pnl_Add_New_Staff.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_All_Staff_List)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dB_Staff_Management_SystemDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.staffDetailsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dB_Staff_Management_SystemDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_Add_New_Staff
@@ -93,8 +92,7 @@
             this.shiftTimingDataGridViewTextBoxColumn,
             this.departmentDataGridViewTextBoxColumn,
             this.projectDataGridViewTextBoxColumn,
-            this.hobbiesDataGridViewTextBoxColumn,
-            this.userIdDataGridViewTextBoxColumn});
+            this.hobbiesDataGridViewTextBoxColumn});
             this.dgv_All_Staff_List.DataSource = this.staffDetailsBindingSource;
             this.dgv_All_Staff_List.Location = new System.Drawing.Point(38, 271);
             this.dgv_All_Staff_List.Name = "dgv_All_Staff_List";
@@ -102,54 +100,6 @@
             this.dgv_All_Staff_List.RowTemplate.Height = 24;
             this.dgv_All_Staff_List.Size = new System.Drawing.Size(1431, 493);
             this.dgv_All_Staff_List.TabIndex = 15;
-            // 
-            // btn_Refresh
-            // 
-            this.btn_Refresh.BackColor = System.Drawing.Color.Coral;
-            this.btn_Refresh.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Refresh.Location = new System.Drawing.Point(994, 181);
-            this.btn_Refresh.Name = "btn_Refresh";
-            this.btn_Refresh.Size = new System.Drawing.Size(142, 56);
-            this.btn_Refresh.TabIndex = 19;
-            this.btn_Refresh.Text = "Refresh";
-            this.btn_Refresh.UseVisualStyleBackColor = false;
-            // 
-            // btn_Close
-            // 
-            this.btn_Close.BackColor = System.Drawing.Color.Coral;
-            this.btn_Close.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Close.Location = new System.Drawing.Point(1269, 181);
-            this.btn_Close.Name = "btn_Close";
-            this.btn_Close.Size = new System.Drawing.Size(128, 56);
-            this.btn_Close.TabIndex = 20;
-            this.btn_Close.Text = "Close";
-            this.btn_Close.UseVisualStyleBackColor = false;
-            this.btn_Close.Click += new System.EventHandler(this.btn_Close_Click);
-            // 
-            // btn_Search
-            // 
-            this.btn_Search.BackColor = System.Drawing.Color.Coral;
-            this.btn_Search.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Search.Location = new System.Drawing.Point(734, 176);
-            this.btn_Search.Name = "btn_Search";
-            this.btn_Search.Size = new System.Drawing.Size(128, 56);
-            this.btn_Search.TabIndex = 18;
-            this.btn_Search.Text = "Search";
-            this.btn_Search.UseVisualStyleBackColor = false;
-            // 
-            // dB_Staff_Management_SystemDataSet
-            // 
-            this.dB_Staff_Management_SystemDataSet.DataSetName = "DB_Staff_Management_SystemDataSet";
-            this.dB_Staff_Management_SystemDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // staffDetailsBindingSource
-            // 
-            this.staffDetailsBindingSource.DataMember = "Staff_Details";
-            this.staffDetailsBindingSource.DataSource = this.dB_Staff_Management_SystemDataSet;
-            // 
-            // staff_DetailsTableAdapter
-            // 
-            this.staff_DetailsTableAdapter.ClearBeforeFill = true;
             // 
             // staffIdDataGridViewTextBoxColumn
             // 
@@ -221,12 +171,55 @@
             this.hobbiesDataGridViewTextBoxColumn.Name = "hobbiesDataGridViewTextBoxColumn";
             this.hobbiesDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // userIdDataGridViewTextBoxColumn
+            // staffDetailsBindingSource
             // 
-            this.userIdDataGridViewTextBoxColumn.DataPropertyName = "User_Id";
-            this.userIdDataGridViewTextBoxColumn.HeaderText = "User_Id";
-            this.userIdDataGridViewTextBoxColumn.Name = "userIdDataGridViewTextBoxColumn";
-            this.userIdDataGridViewTextBoxColumn.ReadOnly = true;
+            this.staffDetailsBindingSource.DataMember = "Staff_Details";
+            this.staffDetailsBindingSource.DataSource = this.dB_Staff_Management_SystemDataSet;
+            // 
+            // dB_Staff_Management_SystemDataSet
+            // 
+            this.dB_Staff_Management_SystemDataSet.DataSetName = "DB_Staff_Management_SystemDataSet";
+            this.dB_Staff_Management_SystemDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // btn_Refresh
+            // 
+            this.btn_Refresh.BackColor = System.Drawing.Color.Coral;
+            this.btn_Refresh.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Refresh.Location = new System.Drawing.Point(994, 181);
+            this.btn_Refresh.Name = "btn_Refresh";
+            this.btn_Refresh.Size = new System.Drawing.Size(142, 56);
+            this.btn_Refresh.TabIndex = 19;
+            this.btn_Refresh.Text = "Refresh";
+            this.btn_Refresh.UseVisualStyleBackColor = false;
+            this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
+            // 
+            // btn_Close
+            // 
+            this.btn_Close.BackColor = System.Drawing.Color.Coral;
+            this.btn_Close.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Close.Location = new System.Drawing.Point(1269, 181);
+            this.btn_Close.Name = "btn_Close";
+            this.btn_Close.Size = new System.Drawing.Size(128, 56);
+            this.btn_Close.TabIndex = 20;
+            this.btn_Close.Text = "Close";
+            this.btn_Close.UseVisualStyleBackColor = false;
+            this.btn_Close.Click += new System.EventHandler(this.btn_Close_Click);
+            // 
+            // btn_Search
+            // 
+            this.btn_Search.BackColor = System.Drawing.Color.Coral;
+            this.btn_Search.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Search.Location = new System.Drawing.Point(734, 176);
+            this.btn_Search.Name = "btn_Search";
+            this.btn_Search.Size = new System.Drawing.Size(128, 56);
+            this.btn_Search.TabIndex = 18;
+            this.btn_Search.Text = "Search";
+            this.btn_Search.UseVisualStyleBackColor = false;
+            this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click);
+            // 
+            // staff_DetailsTableAdapter
+            // 
+            this.staff_DetailsTableAdapter.ClearBeforeFill = true;
             // 
             // lbl_Department
             // 
@@ -247,6 +240,7 @@
             this.cmb_Department.Name = "cmb_Department";
             this.cmb_Department.Size = new System.Drawing.Size(320, 45);
             this.cmb_Department.TabIndex = 21;
+            this.cmb_Department.SelectedIndexChanged += new System.EventHandler(this.cmb_Department_SelectedIndexChanged);
             // 
             // frm_Staff_List
             // 
@@ -271,8 +265,8 @@
             this.pnl_Add_New_Staff.ResumeLayout(false);
             this.pnl_Add_New_Staff.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_All_Staff_List)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dB_Staff_Management_SystemDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.staffDetailsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dB_Staff_Management_SystemDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -289,6 +283,8 @@
         private DB_Staff_Management_SystemDataSet dB_Staff_Management_SystemDataSet;
         private System.Windows.Forms.BindingSource staffDetailsBindingSource;
         private DB_Staff_Management_SystemDataSetTableAdapters.Staff_DetailsTableAdapter staff_DetailsTableAdapter;
+        private System.Windows.Forms.Label lbl_Department;
+        private System.Windows.Forms.ComboBox cmb_Department;
         private System.Windows.Forms.DataGridViewTextBoxColumn staffIdDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn staffNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dateOfBirthDataGridViewTextBoxColumn;
@@ -299,8 +295,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn departmentDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn projectDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn hobbiesDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn userIdDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Label lbl_Department;
-        private System.Windows.Forms.ComboBox cmb_Department;
     }
 }

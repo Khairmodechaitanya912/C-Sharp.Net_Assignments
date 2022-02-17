@@ -83,6 +83,7 @@ namespace Staff_Management_System
             cb_Dmart.Checked = false;
             cb_Tata.Checked = false;
             cb_G_Pay.Checked = false;
+            tb_Hobbies.Clear();
 
             foreach (int itemChecked in clb_Hobbies.CheckedIndices)
             {
@@ -127,6 +128,7 @@ namespace Staff_Management_System
             string Gender = "";
             string Shift_T = "";
             string Projects = "";
+            string Hobbies = "";
 
             if (rbtn_Male.Checked)
             {
@@ -172,6 +174,36 @@ namespace Staff_Management_System
             {
                 Projects = cb_Tata.Text;
             }
+
+            int Cnt = clb_Hobbies.Items.Count;
+
+            for (int i = 0; i <= Cnt - 1; i++)
+            {
+                if (clb_Hobbies.GetItemChecked(i))
+                {
+                    if (i == Cnt - 1 && tb_Hobbies.Text != " ")
+                    {
+                        if (Hobbies == "")
+                        {
+                            Hobbies = tb_Hobbies.Text;
+                        }
+                        else
+                        {
+                            Hobbies += " , " + tb_Hobbies.Text;
+                        }
+                    }
+                    else if (Hobbies == "")
+                    {
+                        Hobbies = clb_Hobbies.Items[i].ToString();
+                    }
+                    else
+                    {
+                        Hobbies += " , " + clb_Hobbies.Items[i].ToString();
+                    }
+
+                }
+            }
+
             if (tb_Staff_Id.Text != "" && tb_Staff_Name.Text != "" && tb_Mob_No.Text != "")
             {
                 Con_Open();
@@ -180,7 +212,7 @@ namespace Staff_Management_System
 
                 Cmd.Connection = Con;
 
-                Cmd.CommandText = "Insert Into Staff_Details (Staff_Id, Staff_Name, Date_Of_Birth, Mobile_No, Designation, Gender, Shift_Timing, Department, Project) Values (@ID,@Name,@DOB,@MOB,@Desig,'" + Gender + "','" + Shift_T + "',@Dept, '" + Projects + "')";
+                Cmd.CommandText = "Insert Into Staff_Details (Staff_Id, Staff_Name, Date_Of_Birth, Mobile_No, Designation, Gender, Shift_Timing, Department, Project,Hobbies) Values (@ID,@Name,@DOB,@MOB,@Desig,'" + Gender + "','" + Shift_T + "',@Dept, '" + Projects + "','" + Hobbies + "')";
 
                 Cmd.Parameters.Add("ID", SqlDbType.Int).Value = tb_Staff_Id.Text;
                 Cmd.Parameters.Add("Name", SqlDbType.NVarChar).Value = tb_Staff_Name.Text;

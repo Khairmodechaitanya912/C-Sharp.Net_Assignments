@@ -64,6 +64,29 @@ namespace Staff_Management_System
             UD.Show();
         }
 
+        private void staffListToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_Staff_List SL = new frm_Staff_List();
+
+            SL.MdiParent = this;
+
+            SL.WindowState = FormWindowState.Maximized;
+
+            SL.Show();
+        }
+
+        private void upToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_Update_Staff US = new frm_Update_Staff();
+
+            US.MdiParent = this;
+
+            US.WindowState = FormWindowState.Maximized;
+
+            US.Show();
+
+        }
+
        
     }
 }
