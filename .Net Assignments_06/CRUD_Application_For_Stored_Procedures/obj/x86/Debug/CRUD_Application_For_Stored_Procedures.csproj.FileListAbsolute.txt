@@ -5,3 +5,5 @@ E:\C#\.Net Assignments_06\CRUD_Application_For_Stored_Procedures\CRUD_Applicatio
 E:\C#\.Net Assignments_06\CRUD_Application_For_Stored_Procedures\CRUD_Application_For_Stored_Procedures\obj\x86\Debug\CRUD_Application_For_Stored_Procedures.csproj.GenerateResource.Cache
 E:\C#\.Net Assignments_06\CRUD_Application_For_Stored_Procedures\CRUD_Application_For_Stored_Procedures\obj\x86\Debug\CRUD_Application_For_Stored_Procedures.exe
 E:\C#\.Net Assignments_06\CRUD_Application_For_Stored_Procedures\CRUD_Application_For_Stored_Procedures\obj\x86\Debug\CRUD_Application_For_Stored_Procedures.pdb
+E:\C#\.Net Assignments_06\CRUD_Application_For_Stored_Procedures\CRUD_Application_For_Stored_Procedures\obj\x86\Debug\CRUD_Application_For_Stored_Procedures.frm_CRUD_App.resources
+E:\C#\.Net Assignments_06\CRUD_Application_For_Stored_Procedures\CRUD_Application_For_Stored_Procedures\obj\x86\Debug\CRUD_Application_For_Stored_Procedures.csprojResolveAssemblyReference.cache

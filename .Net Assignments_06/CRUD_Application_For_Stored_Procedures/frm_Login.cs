@@ -15,5 +15,12 @@ namespace CRUD_Application_For_Stored_Procedures
         {
             InitializeComponent();
         }
+
+        private void btn_Login_Click(object sender, EventArgs e)
+        {
+            frm_CRUD_App CA = new frm_CRUD_App();
+            CA.Show();
+            this.Hide();
+        }
     }
 }
