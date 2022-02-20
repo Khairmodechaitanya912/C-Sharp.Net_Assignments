@@ -1,0 +1,9 @@
+E:\C#\.Net Assignments_03\Employee_Management_System\Employee_Management_System\bin\Debug\Employee_Management_System.exe
+E:\C#\.Net Assignments_03\Employee_Management_System\Employee_Management_System\bin\Debug\Employee_Management_System.pdb
+E:\C#\.Net Assignments_03\Employee_Management_System\Employee_Management_System\obj\x86\Debug\Employee_Management_System.frm_Add_New_Employee.resources
+E:\C#\.Net Assignments_03\Employee_Management_System\Employee_Management_System\obj\x86\Debug\Employee_Management_System.frm_Login_Form.resources
+E:\C#\.Net Assignments_03\Employee_Management_System\Employee_Management_System\obj\x86\Debug\Employee_Management_System.MDI_Employee_Details.resources
+E:\C#\.Net Assignments_03\Employee_Management_System\Employee_Management_System\obj\x86\Debug\Employee_Management_System.Properties.Resources.resources
+E:\C#\.Net Assignments_03\Employee_Management_System\Employee_Management_System\obj\x86\Debug\Employee_Management_System.csproj.GenerateResource.Cache
+E:\C#\.Net Assignments_03\Employee_Management_System\Employee_Management_System\obj\x86\Debug\Employee_Management_System.exe
+E:\C#\.Net Assignments_03\Employee_Management_System\Employee_Management_System\obj\x86\Debug\Employee_Management_System.pdb
