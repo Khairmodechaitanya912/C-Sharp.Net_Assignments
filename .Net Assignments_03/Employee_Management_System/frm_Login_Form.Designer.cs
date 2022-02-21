@@ -72,6 +72,7 @@
             // btn_Sign_In
             // 
             this.btn_Sign_In.BackColor = System.Drawing.Color.IndianRed;
+            this.btn_Sign_In.Enabled = false;
             this.btn_Sign_In.Font = new System.Drawing.Font("Microsoft YaHei UI", 16F);
             this.btn_Sign_In.Location = new System.Drawing.Point(323, 535);
             this.btn_Sign_In.Name = "btn_Sign_In";
@@ -85,17 +86,23 @@
             // 
             this.tb_Username.Font = new System.Drawing.Font("Microsoft YaHei UI", 20F);
             this.tb_Username.Location = new System.Drawing.Point(506, 208);
+            this.tb_Username.MaxLength = 10;
             this.tb_Username.Name = "tb_Username";
             this.tb_Username.Size = new System.Drawing.Size(274, 50);
             this.tb_Username.TabIndex = 1;
+            this.tb_Username.TextChanged += new System.EventHandler(this.tb_Username_TextChanged);
             // 
             // tb_Password
             // 
+            this.tb_Password.Enabled = false;
             this.tb_Password.Font = new System.Drawing.Font("Microsoft YaHei UI", 20F);
             this.tb_Password.Location = new System.Drawing.Point(506, 371);
+            this.tb_Password.MaxLength = 10;
             this.tb_Password.Name = "tb_Password";
+            this.tb_Password.PasswordChar = '*';
             this.tb_Password.Size = new System.Drawing.Size(274, 50);
             this.tb_Password.TabIndex = 2;
+            this.tb_Password.TextChanged += new System.EventHandler(this.tb_Password_TextChanged);
             // 
             // frm_Login_Form
             // 

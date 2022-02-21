@@ -53,6 +53,7 @@
             // 
             // tb_Employee_Id
             // 
+            this.tb_Employee_Id.Enabled = false;
             this.tb_Employee_Id.Font = new System.Drawing.Font("Microsoft YaHei UI", 20F);
             this.tb_Employee_Id.Location = new System.Drawing.Point(721, 179);
             this.tb_Employee_Id.MaxLength = 4;
@@ -70,6 +71,7 @@
             this.btn_Save.TabIndex = 9;
             this.btn_Save.Text = "Save";
             this.btn_Save.UseVisualStyleBackColor = false;
+            this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
             // 
             // lbl_Name
             // 
@@ -191,7 +193,8 @@
             this.Controls.Add(this.lbl_Login_Form);
             this.Name = "frm_Add_New_Employee";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "frm_Add_New_Employee";
+            this.Text = " Add New Employee";
+            this.Load += new System.EventHandler(this.frm_Add_New_Employee_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

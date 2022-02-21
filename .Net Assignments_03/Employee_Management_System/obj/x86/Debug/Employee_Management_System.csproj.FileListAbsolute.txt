@@ -7,3 +7,8 @@ E:\C#\.Net Assignments_03\Employee_Management_System\Employee_Management_System\
 E:\C#\.Net Assignments_03\Employee_Management_System\Employee_Management_System\obj\x86\Debug\Employee_Management_System.csproj.GenerateResource.Cache
 E:\C#\.Net Assignments_03\Employee_Management_System\Employee_Management_System\obj\x86\Debug\Employee_Management_System.exe
 E:\C#\.Net Assignments_03\Employee_Management_System\Employee_Management_System\obj\x86\Debug\Employee_Management_System.pdb
+E:\C#\.Net Assignments_03\Employee_Management_System\Employee_Management_System\obj\x86\Debug\Employee_Management_System.csprojResolveAssemblyReference.cache
+E:\C#\.Net Assignments_03\Employee_Management_System\Employee_Management_System\obj\x86\Debug\Employee_Management_System.frm_Search_Employee.resources
+E:\C#\.Net Assignments_03\Employee_Management_System\Employee_Management_System\obj\x86\Debug\Employee_Management_System.frm_View_All_Employee.resources
+E:\C#\.Net Assignments_03\Employee_Management_System\Employee_Management_System\obj\x86\Debug\Employee_Management_System.frm_View_By_Departments.resources
+E:\C#\.Net Assignments_03\Employee_Management_System\Employee_Management_System\bin\Debug\Employee_Management_System.exe.config
