@@ -53,10 +53,40 @@ namespace Employee_Management_System
 
         private void btn_Search_Click(object sender, EventArgs e)
         {
-            Con_Open();
+            if (tb_Employee_Id.Text != "")
+            {
 
+                Con_Open();
 
-            Con_Close(); 
+                SqlCommand Cmd = new SqlCommand();
+
+                Cmd.Connection = Con;
+
+                Cmd.CommandText = " Select * From Employee_Details where Employee_Id = " + tb_Employee_Id.Text + "";
+
+                var Obj = Cmd.ExecuteReader();
+
+                if (Obj.Read())
+                {
+
+                    tb_Name.Text = Obj.GetString(Obj.GetOrdinal("Name"));
+                    dtp_DOB.Text = (Obj["DOB"].ToString());
+                    cmb_Department.Text = Obj.GetString(Obj.GetOrdinal("Department"));
+                    tb_Mobile_No.Text = (Obj["Mobile_No"].ToString());
+
+                }
+
+                else
+                {
+
+                    MessageBox.Show("Information is Not Available Which You Are Searching ", "No Record Found", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                    Clear_Controls();
+
+                }
+
+                Con_Close();
+            }
         }
 
         private void btn_Refresh_Click(object sender, EventArgs e)

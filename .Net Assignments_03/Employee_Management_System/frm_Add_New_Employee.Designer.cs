@@ -49,7 +49,7 @@
             this.tb_Name.MaxLength = 30;
             this.tb_Name.Name = "tb_Name";
             this.tb_Name.Size = new System.Drawing.Size(380, 50);
-            this.tb_Name.TabIndex = 8;
+            this.tb_Name.TabIndex = 2;
             // 
             // tb_Employee_Id
             // 
@@ -59,7 +59,7 @@
             this.tb_Employee_Id.MaxLength = 4;
             this.tb_Employee_Id.Name = "tb_Employee_Id";
             this.tb_Employee_Id.Size = new System.Drawing.Size(380, 50);
-            this.tb_Employee_Id.TabIndex = 6;
+            this.tb_Employee_Id.TabIndex = 1;
             // 
             // btn_Save
             // 
@@ -68,7 +68,7 @@
             this.btn_Save.Location = new System.Drawing.Point(508, 698);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(131, 51);
-            this.btn_Save.TabIndex = 9;
+            this.btn_Save.TabIndex = 6;
             this.btn_Save.Text = "Save";
             this.btn_Save.UseVisualStyleBackColor = false;
             this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
@@ -113,7 +113,7 @@
             this.tb_Mobile_No.MaxLength = 10;
             this.tb_Mobile_No.Name = "tb_Mobile_No";
             this.tb_Mobile_No.Size = new System.Drawing.Size(380, 50);
-            this.tb_Mobile_No.TabIndex = 13;
+            this.tb_Mobile_No.TabIndex = 4;
             // 
             // lbl_Mobile_No
             // 
@@ -143,7 +143,7 @@
             this.dtp_DOB.Location = new System.Drawing.Point(721, 374);
             this.dtp_DOB.Name = "dtp_DOB";
             this.dtp_DOB.Size = new System.Drawing.Size(380, 50);
-            this.dtp_DOB.TabIndex = 14;
+            this.dtp_DOB.TabIndex = 3;
             // 
             // label3
             // 
@@ -170,7 +170,7 @@
             this.cmb_Department.Location = new System.Drawing.Point(721, 575);
             this.cmb_Department.Name = "cmb_Department";
             this.cmb_Department.Size = new System.Drawing.Size(380, 51);
-            this.cmb_Department.TabIndex = 16;
+            this.cmb_Department.TabIndex = 5;
             // 
             // frm_Add_New_Employee
             // 
