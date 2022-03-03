@@ -139,6 +139,7 @@
             this.btn_Update.TabIndex = 27;
             this.btn_Update.Text = "Update";
             this.btn_Update.UseVisualStyleBackColor = false;
+            this.btn_Update.Click += new System.EventHandler(this.btn_Update_Click);
             // 
             // lbl_Update_Product_Details
             // 
@@ -221,6 +222,7 @@
             this.Name = "frm_Update_Product_Details";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Update Product Details";
+            this.Load += new System.EventHandler(this.frm_Update_Product_Details_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

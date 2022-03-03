@@ -44,7 +44,7 @@ namespace Product_Management_System
             dtp_Mfg_Date.ResetText();
             cmb_Net_Weight.SelectedIndex = -1;
 
-            tb_Product_Name.Focus();
+            tb_Product_Id.Focus();
         }
         private void frm_Search_Product_Load(object sender, EventArgs e)
         {
@@ -59,7 +59,26 @@ namespace Product_Management_System
             {
                 SqlCommand Cmd = new SqlCommand();
                 Cmd.Connection = Con;
-                Cmd.CommandText = "Select ";
+                Cmd.CommandText = "Select * from Product_Details Where Product_Id = " + tb_Product_Id.Text + "";
+
+                var Obj = Cmd.ExecuteReader();
+
+                if (Obj.Read())
+                {
+                    tb_Product_Name.Text = Obj.GetString(Obj.GetOrdinal("Product_Name"));
+                    dtp_Mfg_Date.Text = (Obj["Mfg_Date"].ToString());
+                    dtp_Expiry_Date.Text = (Obj["Expiry_Date"].ToString());
+                    tb_MRP.Text = (Obj["MRP"].ToString());
+                    cmb_Net_Weight.Text = Obj.GetString(Obj.GetOrdinal("Net_Weight"));
+
+                    tb_Product_Id.Enabled = false;
+                }
+
+                else 
+                {
+                    MessageBox.Show("Information is Not Available Which You Are Searching", "No Record Found", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Clear_Controls();
+                }
             }
             Con_Close();
         }
@@ -67,6 +86,7 @@ namespace Product_Management_System
         private void btn_Refresh_Click(object sender, EventArgs e)
         {
             Clear_Controls();
+            tb_Product_Id.Enabled = true;
         }
     }
 }
