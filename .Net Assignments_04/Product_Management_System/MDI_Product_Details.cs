@@ -16,6 +16,19 @@ namespace Product_Management_System
             InitializeComponent();
         }
 
+        private void MDI_Product_Details_Load(object sender, EventArgs e)
+        {
+            lbl_Logged_In_User.Text = "Wel-come " + Global_Var.Uname;
+
+            if (Global_Var.User_Role == 1)
+            {
+                updateProductToolStripMenuItem.Visible = true;
+                viewByToolStripMenuItem.Visible = true;
+                reportToolStripMenuItem.Visible = true;
+
+            }
+        }
+
         private void addNewProductToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frm_Add_New_Product ANF = new frm_Add_New_Product();
@@ -87,6 +100,12 @@ namespace Product_Management_System
 
             if (Res == DialogResult.Yes)
             {
+                updateProductToolStripMenuItem.Visible = false;
+                viewByToolStripMenuItem.Visible = false;
+                reportToolStripMenuItem.Visible = false;
+
+                Global_Var.User_Role = 0;
+
                 frm_Login LG = new frm_Login();
 
                 LG.Show();
@@ -95,9 +114,5 @@ namespace Product_Management_System
             }
         }
 
-        private void MDI_Product_Details_Load(object sender, EventArgs e)
-        {
-            lbl_Logged_In_User.Text = "Wel-come " + Global_Var.Uname;
-        }
     }
 }

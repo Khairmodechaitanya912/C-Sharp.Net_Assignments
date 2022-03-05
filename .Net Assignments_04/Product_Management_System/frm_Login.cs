@@ -62,6 +62,11 @@ namespace Product_Management_System
             {
                 Global_Var.Uname = tb_Username.Text;
 
+                if (tb_Username.Text == "Chaitu")
+                {
+                    Global_Var.User_Role = 1;
+                }
+
                 MessageBox.Show("Login Successfully...!!!", "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 MDI_Product_Details MDI = new MDI_Product_Details();

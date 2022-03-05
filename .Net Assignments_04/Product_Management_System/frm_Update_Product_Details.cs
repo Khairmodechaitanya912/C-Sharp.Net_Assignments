@@ -56,8 +56,71 @@ namespace Product_Management_System
         {
             Con_Open();
 
+            if (tb_Product_Id.Text != "" && tb_Product_Name.Text != "" && tb_MRP.Text != "")
+            {
+
+                SqlCommand Cmd = new SqlCommand();
+                Cmd.Connection = Con;
+                Cmd.CommandText = "Update Product_Details Set Product_Name = @Name , Mfg_Date = @MFG, Expiry_Date = @EXP, MRP = @MRP, Net_Weight = @NET Where Product_Id = @ID";
+
+                Cmd.Parameters.Add("ID", SqlDbType.Int).Value = tb_Product_Id.Text;
+                Cmd.Parameters.Add("Name", SqlDbType.NVarChar).Value = tb_Product_Name.Text;
+                Cmd.Parameters.Add("MFG", SqlDbType.Date).Value = dtp_Mfg_Date.Value.Date;
+                Cmd.Parameters.Add("EXP", SqlDbType.Date).Value = dtp_Expiry_Date.Value.Date;
+                Cmd.Parameters.Add("MRP", SqlDbType.Money).Value = tb_MRP.Text;
+                Cmd.Parameters.Add("NET", SqlDbType.NVarChar).Value = cmb_Net_Weight.Text;
+
+                Cmd.ExecuteNonQuery();
+
+                MessageBox.Show("Product Details Updated Successfully....!!", "Updating", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                Clear_Controls();
+            }
+
+            else
+            {
+                MessageBox.Show("Plz Fill all Information..!!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
 
             Con_Close();
+
+        }
+
+        private void btn_Search_Click(object sender, EventArgs e)
+        {
+            Con_Open();
+
+            if (tb_Product_Id.Text != "")
+            {
+                SqlCommand Cmd = new SqlCommand();
+                Cmd.Connection = Con;
+                Cmd.CommandText = "Select * from Product_Details Where Product_Id = " + tb_Product_Id.Text + "";
+
+                var Obj = Cmd.ExecuteReader();
+
+                if (Obj.Read())
+                {
+                    tb_Product_Name.Text = Obj.GetString(Obj.GetOrdinal("Product_Name"));
+                    dtp_Mfg_Date.Text = (Obj["Mfg_Date"].ToString());
+                    dtp_Expiry_Date.Text = (Obj["Expiry_Date"].ToString());
+                    tb_MRP.Text = (Obj["MRP"].ToString());
+                    cmb_Net_Weight.Text = Obj.GetString(Obj.GetOrdinal("Net_Weight"));
+
+                }
+
+                else
+                {
+                    MessageBox.Show("Information is Not Available Which You Are Searching", "No Record Found", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Clear_Controls();
+                }
+            }
+
+            Con_Close();
+        }
+
+        private void btn_Refresh_Click(object sender, EventArgs e)
+        {
+            Clear_Controls();
         }
     }
 }

@@ -43,6 +43,8 @@
             this.lbl_Password = new System.Windows.Forms.Label();
             this.lbl_Product_Id = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_Search = new System.Windows.Forms.Button();
+            this.btn_Refresh = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -133,7 +135,7 @@
             // 
             this.btn_Update.BackColor = System.Drawing.Color.Orange;
             this.btn_Update.Font = new System.Drawing.Font("Microsoft Uighur", 22F, System.Drawing.FontStyle.Bold);
-            this.btn_Update.Location = new System.Drawing.Point(474, 736);
+            this.btn_Update.Location = new System.Drawing.Point(568, 731);
             this.btn_Update.Name = "btn_Update";
             this.btn_Update.Size = new System.Drawing.Size(166, 51);
             this.btn_Update.TabIndex = 27;
@@ -198,6 +200,30 @@
             this.panel1.Size = new System.Drawing.Size(1221, 133);
             this.panel1.TabIndex = 28;
             // 
+            // btn_Search
+            // 
+            this.btn_Search.BackColor = System.Drawing.Color.Orange;
+            this.btn_Search.Font = new System.Drawing.Font("Microsoft Uighur", 22F, System.Drawing.FontStyle.Bold);
+            this.btn_Search.Location = new System.Drawing.Point(266, 731);
+            this.btn_Search.Name = "btn_Search";
+            this.btn_Search.Size = new System.Drawing.Size(166, 51);
+            this.btn_Search.TabIndex = 37;
+            this.btn_Search.Text = "Search";
+            this.btn_Search.UseVisualStyleBackColor = false;
+            this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click);
+            // 
+            // btn_Refresh
+            // 
+            this.btn_Refresh.BackColor = System.Drawing.Color.Orange;
+            this.btn_Refresh.Font = new System.Drawing.Font("Microsoft Uighur", 22F, System.Drawing.FontStyle.Bold);
+            this.btn_Refresh.Location = new System.Drawing.Point(851, 731);
+            this.btn_Refresh.Name = "btn_Refresh";
+            this.btn_Refresh.Size = new System.Drawing.Size(166, 51);
+            this.btn_Refresh.TabIndex = 38;
+            this.btn_Refresh.Text = "Refresh";
+            this.btn_Refresh.UseVisualStyleBackColor = false;
+            this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
+            // 
             // frm_Update_Product_Details
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -205,6 +231,8 @@
             this.BackColor = System.Drawing.Color.FloralWhite;
             this.ClientSize = new System.Drawing.Size(1152, 806);
             this.ControlBox = false;
+            this.Controls.Add(this.btn_Refresh);
+            this.Controls.Add(this.btn_Search);
             this.Controls.Add(this.cmb_Net_Weight);
             this.Controls.Add(this.lbl_Net_Weight);
             this.Controls.Add(this.dtp_Expiry_Date);
@@ -247,5 +275,7 @@
         private System.Windows.Forms.Label lbl_Password;
         private System.Windows.Forms.Label lbl_Product_Id;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btn_Search;
+        private System.Windows.Forms.Button btn_Refresh;
     }
 }

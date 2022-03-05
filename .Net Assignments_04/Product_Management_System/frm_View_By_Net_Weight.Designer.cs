@@ -32,22 +32,22 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbl_View_By_Net_Weight = new System.Windows.Forms.Label();
             this.dgv_View_All_Product = new System.Windows.Forms.DataGridView();
-            this.cmb_Net_Weight = new System.Windows.Forms.ComboBox();
-            this.lbl_Net_Weight = new System.Windows.Forms.Label();
-            this.btn_Refresh = new System.Windows.Forms.Button();
-            this.dB_Product_Management_SystemDataSet1 = new Product_Management_System.DB_Product_Management_SystemDataSet1();
-            this.productDetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.product_DetailsTableAdapter = new Product_Management_System.DB_Product_Management_SystemDataSet1TableAdapters.Product_DetailsTableAdapter();
             this.productIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mfgDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.expiryDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mRPDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.netWeightDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productDetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dB_Product_Management_SystemDataSet1 = new Product_Management_System.DB_Product_Management_SystemDataSet1();
+            this.cmb_Net_Weight = new System.Windows.Forms.ComboBox();
+            this.lbl_Net_Weight = new System.Windows.Forms.Label();
+            this.btn_Refresh = new System.Windows.Forms.Button();
+            this.product_DetailsTableAdapter = new Product_Management_System.DB_Product_Management_SystemDataSet1TableAdapters.Product_DetailsTableAdapter();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_View_All_Product)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dB_Product_Management_SystemDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productDetailsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dB_Product_Management_SystemDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -95,60 +95,6 @@
             this.dgv_View_All_Product.Size = new System.Drawing.Size(1097, 463);
             this.dgv_View_All_Product.TabIndex = 32;
             // 
-            // cmb_Net_Weight
-            // 
-            this.cmb_Net_Weight.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmb_Net_Weight.Font = new System.Drawing.Font("Microsoft Uighur", 20F);
-            this.cmb_Net_Weight.FormattingEnabled = true;
-            this.cmb_Net_Weight.Items.AddRange(new object[] {
-            "10 ml",
-            "50 ml",
-            "100 ml",
-            "150 ml",
-            "250 ml",
-            "500 ml",
-            "750 ml",
-            "1 l"});
-            this.cmb_Net_Weight.Location = new System.Drawing.Point(331, 204);
-            this.cmb_Net_Weight.Name = "cmb_Net_Weight";
-            this.cmb_Net_Weight.Size = new System.Drawing.Size(343, 51);
-            this.cmb_Net_Weight.TabIndex = 34;
-            // 
-            // lbl_Net_Weight
-            // 
-            this.lbl_Net_Weight.AutoSize = true;
-            this.lbl_Net_Weight.Font = new System.Drawing.Font("Microsoft Uighur", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Net_Weight.Location = new System.Drawing.Point(62, 204);
-            this.lbl_Net_Weight.Name = "lbl_Net_Weight";
-            this.lbl_Net_Weight.Size = new System.Drawing.Size(175, 52);
-            this.lbl_Net_Weight.TabIndex = 33;
-            this.lbl_Net_Weight.Text = "Net Weight";
-            // 
-            // btn_Refresh
-            // 
-            this.btn_Refresh.BackColor = System.Drawing.Color.Orange;
-            this.btn_Refresh.Font = new System.Drawing.Font("Microsoft Uighur", 22F, System.Drawing.FontStyle.Bold);
-            this.btn_Refresh.Location = new System.Drawing.Point(802, 205);
-            this.btn_Refresh.Name = "btn_Refresh";
-            this.btn_Refresh.Size = new System.Drawing.Size(166, 51);
-            this.btn_Refresh.TabIndex = 35;
-            this.btn_Refresh.Text = "Refresh";
-            this.btn_Refresh.UseVisualStyleBackColor = false;
-            // 
-            // dB_Product_Management_SystemDataSet1
-            // 
-            this.dB_Product_Management_SystemDataSet1.DataSetName = "DB_Product_Management_SystemDataSet1";
-            this.dB_Product_Management_SystemDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // productDetailsBindingSource
-            // 
-            this.productDetailsBindingSource.DataMember = "Product_Details";
-            this.productDetailsBindingSource.DataSource = this.dB_Product_Management_SystemDataSet1;
-            // 
-            // product_DetailsTableAdapter
-            // 
-            this.product_DetailsTableAdapter.ClearBeforeFill = true;
-            // 
             // productIdDataGridViewTextBoxColumn
             // 
             this.productIdDataGridViewTextBoxColumn.DataPropertyName = "Product_Id";
@@ -191,6 +137,62 @@
             this.netWeightDataGridViewTextBoxColumn.Name = "netWeightDataGridViewTextBoxColumn";
             this.netWeightDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // productDetailsBindingSource
+            // 
+            this.productDetailsBindingSource.DataMember = "Product_Details";
+            this.productDetailsBindingSource.DataSource = this.dB_Product_Management_SystemDataSet1;
+            // 
+            // dB_Product_Management_SystemDataSet1
+            // 
+            this.dB_Product_Management_SystemDataSet1.DataSetName = "DB_Product_Management_SystemDataSet1";
+            this.dB_Product_Management_SystemDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // cmb_Net_Weight
+            // 
+            this.cmb_Net_Weight.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_Net_Weight.Font = new System.Drawing.Font("Microsoft Uighur", 20F);
+            this.cmb_Net_Weight.FormattingEnabled = true;
+            this.cmb_Net_Weight.Items.AddRange(new object[] {
+            "10 ml",
+            "50 ml",
+            "100 ml",
+            "150 ml",
+            "250 ml",
+            "500 ml",
+            "750 ml",
+            "1 l"});
+            this.cmb_Net_Weight.Location = new System.Drawing.Point(331, 204);
+            this.cmb_Net_Weight.Name = "cmb_Net_Weight";
+            this.cmb_Net_Weight.Size = new System.Drawing.Size(343, 51);
+            this.cmb_Net_Weight.TabIndex = 34;
+            this.cmb_Net_Weight.SelectedIndexChanged += new System.EventHandler(this.cmb_Net_Weight_SelectedIndexChanged);
+            // 
+            // lbl_Net_Weight
+            // 
+            this.lbl_Net_Weight.AutoSize = true;
+            this.lbl_Net_Weight.Font = new System.Drawing.Font("Microsoft Uighur", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Net_Weight.Location = new System.Drawing.Point(62, 204);
+            this.lbl_Net_Weight.Name = "lbl_Net_Weight";
+            this.lbl_Net_Weight.Size = new System.Drawing.Size(175, 52);
+            this.lbl_Net_Weight.TabIndex = 33;
+            this.lbl_Net_Weight.Text = "Net Weight";
+            // 
+            // btn_Refresh
+            // 
+            this.btn_Refresh.BackColor = System.Drawing.Color.Orange;
+            this.btn_Refresh.Font = new System.Drawing.Font("Microsoft Uighur", 22F, System.Drawing.FontStyle.Bold);
+            this.btn_Refresh.Location = new System.Drawing.Point(802, 205);
+            this.btn_Refresh.Name = "btn_Refresh";
+            this.btn_Refresh.Size = new System.Drawing.Size(166, 51);
+            this.btn_Refresh.TabIndex = 35;
+            this.btn_Refresh.Text = "Refresh";
+            this.btn_Refresh.UseVisualStyleBackColor = false;
+            this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
+            // 
+            // product_DetailsTableAdapter
+            // 
+            this.product_DetailsTableAdapter.ClearBeforeFill = true;
+            // 
             // frm_View_By_Net_Weight
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -210,8 +212,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_View_All_Product)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dB_Product_Management_SystemDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productDetailsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dB_Product_Management_SystemDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
