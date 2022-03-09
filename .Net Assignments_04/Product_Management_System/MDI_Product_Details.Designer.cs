@@ -92,6 +92,7 @@
             this.updateProductToolStripMenuItem.Name = "updateProductToolStripMenuItem";
             this.updateProductToolStripMenuItem.Size = new System.Drawing.Size(270, 50);
             this.updateProductToolStripMenuItem.Text = "Update Product";
+            this.updateProductToolStripMenuItem.Visible = false;
             this.updateProductToolStripMenuItem.Click += new System.EventHandler(this.updateProductToolStripMenuItem_Click);
             // 
             // viewProductToolStripMenuItem
@@ -115,6 +116,7 @@
             this.viewByToolStripMenuItem.Name = "viewByToolStripMenuItem";
             this.viewByToolStripMenuItem.Size = new System.Drawing.Size(293, 50);
             this.viewByToolStripMenuItem.Text = "View By Net Weight";
+            this.viewByToolStripMenuItem.Visible = false;
             this.viewByToolStripMenuItem.Click += new System.EventHandler(this.viewByToolStripMenuItem_Click);
             // 
             // toolsToolStripMenuItem
@@ -145,6 +147,7 @@
             this.reportToolStripMenuItem.Name = "reportToolStripMenuItem";
             this.reportToolStripMenuItem.Size = new System.Drawing.Size(97, 42);
             this.reportToolStripMenuItem.Text = "Report";
+            this.reportToolStripMenuItem.Visible = false;
             // 
             // btn_Logout
             // 
