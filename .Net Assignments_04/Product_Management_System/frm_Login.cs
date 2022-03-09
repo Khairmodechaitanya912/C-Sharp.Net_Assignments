@@ -35,6 +35,15 @@ namespace Product_Management_System
             }
         }
 
+        void Clear_Controls()
+        {
+            tb_Username.Clear();
+            tb_Password.Clear();
+            btn_Sign_In.Enabled = false;
+            tb_Password.Enabled = false;
+
+            tb_Username.Focus();
+        }
         private void tb_Username_TextChanged(object sender, EventArgs e)
         {
             tb_Password.Enabled = true;
@@ -89,13 +98,7 @@ namespace Product_Management_System
 
         private void frm_Login_Load(object sender, EventArgs e)
         {
-
-            tb_Username.Clear();
-            tb_Password.Clear();
-            btn_Sign_In.Enabled = false;
-            tb_Password.Enabled = false;
-
-            tb_Username.Focus();
+            Clear_Controls();
         }
 
 
